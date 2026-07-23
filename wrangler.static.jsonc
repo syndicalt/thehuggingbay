@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "the-hugging-bay",
+  "compatibility_date": "2026-07-23",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "docs-root"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}

@@ -7,10 +7,17 @@
   "scripts": {
     "start": "node server.mjs",
     "build:static": "node build-static.mjs",
-    "reseed": "node --experimental-sqlite -e \"import('./lib/db.mjs').then(m => m.resetDb())\""
+    "reseed": "node --experimental-sqlite -e \"import('./lib/db.mjs').then(m => m.resetDb())\"",
+    "deploy": "wrangler deploy --config worker/wrangler.jsonc",
+    "deploy:mirror": "wrangler deploy --config wrangler.static.jsonc",
+    "preview": "wrangler dev --config worker/wrangler.jsonc",
+    "build:mirrors": "BAY_ORIGIN=https://thehuggingbay.io OUT_DIR=docs-root BASE_PATH= node build-static.mjs && BAY_ORIGIN=https://thehuggingbay.io node build-static.mjs"
   },
   "engines": {
     "node": ">=22.5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.114.0"
+  }
 }

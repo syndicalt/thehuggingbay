@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Policy — The Hugging Bay</title>
+<title>Mirrors — The Hugging Bay</title>
 <meta name="description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite. ⛵">
 <meta property="og:site_name" content="The Hugging Bay">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Policy — The Hugging Bay">
+<meta property="og:title" content="Mirrors — The Hugging Bay">
 <meta property="og:description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite.">
 <meta property="og:image" content="https://thehuggingbay.io/card.jpg">
 <meta property="og:image:width" content="1200">
@@ -30,25 +30,20 @@
   </nav>
 </header>
 <div class="prose">
-<h2>Content policy</h2>
-<p>The Hugging Bay indexes only artifacts whose licenses <b>explicitly permit redistribution</b>:
-Apache-2.0, MIT, BSD, CC and ODC families, OpenRAIL variants, and community licenses that grant
-redistribution rights (e.g. Llama Community, Gemma, Qwen). The pirate flag is aesthetic; the
-cargo is legal.</p>
+<h2>🪞 Mirrors</h2>
+<p>The Bay is served from more than one place, and the index itself is downloadable. If one
+copy goes dark, use another:</p>
 <ul>
-<li><b>Never listed:</b> gated or access-controlled repos, leaked or proprietary weights, artifacts
-with no license or a no-redistribution clause, and anything containing private data.</li>
-<li><b>Attribution preserved:</b> listings must link the upstream source; torrents should include the
-original LICENSE and README files.</li>
-<li><b>License terms travel with the cargo:</b> some accepted licenses carry conditions
-(attribution, NC clauses, acceptable-use policies). Downstream users are bound by them; the Bay
-surfaces the license tag on every listing so nobody is surprised.</li>
+<li><b>Primary:</b> <a href="https://thehuggingbay.io">thehuggingbay.io</a> (live index, uploads enabled)</li>
+<li><b>Static mirror:</b> <a href="https://the-hugging-bay.syndicalt.workers.dev" rel="noopener">the-hugging-bay.syndicalt.workers.dev</a> — read-only snapshot, refreshed daily</li>
+<li><b>Static mirror:</b> <a href="https://syndicalt.github.io/thehuggingbay/" rel="noopener">syndicalt.github.io/thehuggingbay</a> — read-only snapshot on GitHub Pages, refreshed daily</li>
+<li><b>The catalog torrent:</b> <a href="/thehuggingbay/catalog">the whole index as a magnet</a> — currently <code>6abb2d5b5455…</code></li>
 </ul>
-<h2 id="takedown">Takedown</h2>
-<p>If something is listed that shouldn't be — wrong license tag, gated content, personal data —
-email <a href="mailto:takedown@thehuggingbay.io"><b>takedown@thehuggingbay.io</b></a> or open an issue.
-Include the listing URL or infohash and the basis for removal. Non-compliant listings are removed
-fast, no drama. We are here to preserve what's freely given, not to leak what isn't.</p>
+<h2>Run your own</h2>
+<pre class="code">git clone https://github.com/syndicalt/thehuggingbay
+cd thehuggingbay && node server.mjs   # zero dependencies, Node ≥ 22.5</pre>
+<p>Every page is also exportable as flat HTML (<code>npm run build:static</code>) — host it
+anywhere that serves files. The swarm doesn't care where the map came from.</p>
 </div>
 <footer>
   <nav>

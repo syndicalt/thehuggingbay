@@ -7,12 +7,15 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
-const OUT = join(ROOT, 'docs');
+const OUT = process.env.OUT_DIR ? join(ROOT, process.env.OUT_DIR) : join(ROOT, 'docs');
 const BASE = process.env.BASE_PATH ?? '/thehuggingbay';
+// BAY_ORIGIN=https://thehuggingbay.io crawls the live index (real catalog);
+// unset, it spawns the local dev server (demo catalog).
+const LIVE = process.env.BAY_ORIGIN || null;
 const PORT = 13999;
-const ORIGIN = `http://localhost:${PORT}`;
+const ORIGIN = LIVE || `http://localhost:${PORT}`;
 
-const server = spawn('node', [join(ROOT, 'server.mjs')], {
+const server = LIVE ? null : spawn('node', [join(ROOT, 'server.mjs')], {
   env: { ...process.env, PORT: String(PORT) },
   stdio: 'ignore',
 });
@@ -22,7 +25,7 @@ async function waitForServer() {
     try { await fetch(ORIGIN + '/api/stats'); return; } catch { /* not up yet */ }
     await new Promise((r) => setTimeout(r, 250));
   }
-  throw new Error('server did not start');
+  throw new Error(`no response from ${ORIGIN}`);
 }
 
 const rewrite = (html) => html
@@ -87,9 +90,9 @@ const SEARCH_JS = `<script>
 })();
 </script>`;
 
-const STATIC_NOTE = `<p class="warn"><b>Static demo:</b> this page is served from GitHub Pages, so uploads are
-disabled here. Clone the repo and run <code>node server.mjs</code> for the full Bay, or open a GitHub issue
-with your magnet + license + upstream link.</p>`;
+const STATIC_NOTE = `<p class="warn"><b>Static mirror:</b> this copy of the Bay is read-only, so uploads are
+disabled here. Use the <a href="https://thehuggingbay.io/submit">primary index</a>, run your own
+(<code>node server.mjs</code>), or open a GitHub issue with your magnet + license + upstream link.</p>`;
 
 async function main() {
   await waitForServer();
@@ -118,6 +121,8 @@ async function main() {
   await save('/about');
   await save('/policy');
   await save('/api');
+  await save('/catalog');
+  await save('/mirrors');
 
   const submitRes = rewrite(await (await fetch(`${ORIGIN}/submit`)).text())
     .replace('<h2>Upload a torrent</h2>', `<h2>Upload a torrent</h2>\n${STATIC_NOTE}`)
@@ -131,10 +136,10 @@ async function main() {
 <title>I'm Feeling Lucky</title>
 <script>const t=${luckyTargets};location.replace(t[Math.floor(Math.random()*t.length)]);</script>`);
 
-  console.log(`Static site built in docs/ (${torrents.length} torrents, base path "${BASE}")`);
+  console.log(`Static site built (${torrents.length} torrents, base path "${BASE}")`);
 }
 
 main().then(
-  () => { server.kill(); process.exit(0); },
-  (err) => { console.error(err); server.kill(); process.exit(1); },
+  () => { server?.kill(); process.exit(0); },
+  (err) => { console.error(err); server?.kill(); process.exit(1); },
 );

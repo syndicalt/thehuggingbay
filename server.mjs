@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import {
   getDb, searchTorrents, getTorrent, randomTorrent, categoryCounts,
-  fleetStats, insertTorrent, topUploaders,
+  fleetStats, insertTorrent, topUploaders, latestCatalog,
   CATEGORIES, validateListing,
 } from './lib/db.mjs';
 import * as views from './lib/views.mjs';
@@ -93,6 +93,12 @@ const server = createServer(async (req, res) => {
       if (path === '/fleet') {
         const { totals, underSeeded } = fleetStats();
         return send(200, views.fleetView({ totals, underSeeded, sailors: topUploaders() }));
+      }
+      if (path === '/catalog') return send(200, views.catalogView({ latest: latestCatalog() }));
+      if (path === '/mirrors') return send(200, views.mirrorsView({ latest: latestCatalog() }));
+      if (path === '/api/catalog') {
+        const c = latestCatalog();
+        return c ? json(200, views.torrentJson(c)) : json(404, { error: 'no catalog yet' });
       }
       if (path === '/api') return send(200, views.apiDocsView());
       if (path === '/about') return send(200, views.aboutView());

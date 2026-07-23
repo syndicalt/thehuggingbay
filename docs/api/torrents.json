@@ -1,458 +1,810 @@
 [
   {
-    "infohash": "e9b58075dac55fc5b272380b1b91fbbacdafadbe",
-    "name": "gpt-oss-120b",
-    "category": "llm",
-    "size_bytes": 70115341107,
-    "size": "65.3 GB",
-    "seeds": 2210,
-    "leechers": 340,
-    "uploader": "CaptainHug",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-20T16:29:16.242Z",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/openai/gpt-oss-120b",
-    "description": "MXFP4 release of gpt-oss-120b, fits a single 80 GB GPU.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/openai/gpt-oss-120b/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:e9b58075dac55fc5b272380b1b91fbbacdafadbe&dn=gpt-oss-120b&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fopenai%2Fgpt-oss-120b%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "9a7cd3a0399e0d76c1969ae93699f51b27e75ac9",
-    "name": "DeepSeek-R1-0528",
-    "category": "llm",
-    "size_bytes": 738734374912,
-    "size": "688.0 GB",
-    "seeds": 1834,
-    "leechers": 412,
-    "uploader": "SeaLLM",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-21T16:29:16.231Z",
-    "license": "MIT",
-    "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
-    "description": "Full FP8 weights of the DeepSeek-R1-0528 reasoning model. Multi-file layout mirrors the upstream HF repo.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:9a7cd3a0399e0d76c1969ae93699f51b27e75ac9&dn=DeepSeek-R1-0528&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdeepseek-ai%2FDeepSeek-R1-0528%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "c0675a16e562cb15e0d2b0ec004bd4c7f6f212ae",
-    "name": "stable-diffusion-xl-base-1.0",
-    "category": "vis",
-    "size_bytes": 14925011354,
-    "size": "13.9 GB",
-    "seeds": 1450,
-    "leechers": 90,
-    "uploader": "UI-Corsair",
-    "uploader_rank": "Sailor",
-    "uploaded_at": "2026-06-23T16:29:16.276Z",
-    "license": "OpenRAIL++-M",
-    "source_url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
-    "description": "The classic. Base UNet, both text encoders, VAE.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:c0675a16e562cb15e0d2b0ec004bd4c7f6f212ae&dn=stable-diffusion-xl-base-1.0&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fstabilityai%2Fstable-diffusion-xl-base-1.0%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "cff3dc20d1e1361789a334c91ca475a6a8ce7e0c",
-    "name": "whisper-large-v3",
-    "category": "aud",
-    "size_bytes": 3328599654,
-    "size": "3.1 GB",
-    "seeds": 1320,
-    "leechers": 48,
-    "uploader": "CaptainHug",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-03T16:29:16.280Z",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/openai/whisper-large-v3",
-    "description": "Speech recognition workhorse, safetensors + original OpenAI checkpoint.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/openai/whisper-large-v3/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:cff3dc20d1e1361789a334c91ca475a6a8ce7e0c&dn=whisper-large-v3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fopenai%2Fwhisper-large-v3%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "526753f1c75f1aa87779f4bc0da3a3167919cd6a",
-    "name": "Llama-3.1-70B-Instruct",
-    "category": "llm",
-    "size_bytes": 141304424038,
-    "size": "131.6 GB",
-    "seeds": 1245,
-    "leechers": 178,
-    "uploader": "CaptainHug",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-22T16:29:16.235Z",
-    "license": "Llama-3.1-Community",
-    "source_url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-    "description": "BF16 safetensors, tokenizer, and config. Redistribution permitted under the Llama 3.1 Community License with attribution.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:526753f1c75f1aa87779f4bc0da3a3167919cd6a&dn=Llama-3.1-70B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmeta-llama%2FLlama-3.1-70B-Instruct%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "01f350b8eee6cf695413051676ad9bb2ccef6459",
-    "name": "FLUX.1-schnell",
-    "category": "vis",
-    "size_bytes": 25555055411,
-    "size": "23.8 GB",
-    "seeds": 1105,
-    "leechers": 214,
-    "uploader": "UI-Corsair",
-    "uploader_rank": "Sailor",
-    "uploaded_at": "2026-07-21T16:29:16.270Z",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
-    "description": "Fast distilled text-to-image transformer, full pipeline weights.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:01f350b8eee6cf695413051676ad9bb2ccef6459&dn=FLUX.1-schnell&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fblack-forest-labs%2FFLUX.1-schnell%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "67f3af31b0950fe7148a6a268a3ea96001e9390a",
-    "name": "Qwen3-235B-A22B-Instruct",
-    "category": "llm",
-    "size_bytes": 471480034918,
-    "size": "439.1 GB",
-    "seeds": 967,
-    "leechers": 203,
-    "uploader": "SeaLLM",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-19T16:29:16.238Z",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
-    "description": "Mixture-of-experts flagship, BF16 shards. Webseeds point back at the upstream repo.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/Qwen/Qwen3-235B-A22B/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:67f3af31b0950fe7148a6a268a3ea96001e9390a&dn=Qwen3-235B-A22B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen3-235B-A22B%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "4cba1ad159ecc0224750a5ea1c3edef33afb56e6",
+    "infohash": "4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b",
     "name": "nomic-embed-text-v1.5",
     "category": "emb",
-    "size_bytes": 573571072,
-    "size": "547 MB",
-    "seeds": 921,
-    "leechers": 25,
-    "uploader": "VectorJack",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-08T16:29:16.266Z",
+    "size_bytes": 2215241835,
+    "size": "2.1 GB",
+    "seeds": 2,
+    "leechers": 0,
+    "uploader": "syndicalt",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-23 18:56:22",
     "license": "Apache-2.0",
     "source_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
-    "description": "Long-context text embeddings with Matryoshka dimensions.",
+    "description": "Long-context text embeddings with Matryoshka dims. Full mirror of nomic-ai/nomic-embed-text-v1.5.",
     "verified": 2,
     "webseeds": [
-      "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/resolve/main/"
+      "https://thehuggingbay.io/ws/nomic-ai/"
     ],
-    "magnet": "magnet:?xt=urn:btih:4cba1ad159ecc0224750a5ea1c3edef33afb56e6&dn=nomic-embed-text-v1.5&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fnomic-ai%2Fnomic-embed-text-v1.5%2Fresolve%2Fmain%2F"
+    "files": [
+      {
+        "path": "1_Pooling/config.json",
+        "size": 286,
+        "sha256": "3d6180f7233df2f529d65ea60c8db4af614fb78cbe99fd81103dcfeb9f8166a5"
+      },
+      {
+        "path": "config_sentence_transformers.json",
+        "size": 140,
+        "sha256": "482f42ca954f5a8d55bccbb437b8d6eb721ce19059c78330c815045ddd1a87eb"
+      },
+      {
+        "path": "config.json",
+        "size": 2538,
+        "sha256": "9ab00bd92cee80a569f708140b7b6c1661a65891ff3765b1519e181ba2f2c92b"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 546938168,
+        "sha256": "9e7d262b1fe5ea350782829496efa831901b77486bbde1cea54a4c822d010d5c"
+      },
+      {
+        "path": "modules.json",
+        "size": 255,
+        "sha256": "f93c503b32fa7bc2e186843f0add961caa14eb68f7be516e327df3cadbcd541a"
+      },
+      {
+        "path": "onnx/model_bnb4.onnx",
+        "size": 158035801,
+        "sha256": "eb81cef4642ae7a81cd135c08d9622d85cff3fa25d5adabb3561fba908a48b75"
+      },
+      {
+        "path": "onnx/model_fp16.onnx",
+        "size": 273859028,
+        "sha256": "cf5b5a86edb00f895561803cfc04729090a958340b8ca2ad76c143f565f6bb04"
+      },
+      {
+        "path": "onnx/model_int8.onnx",
+        "size": 137296292,
+        "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27"
+      },
+      {
+        "path": "onnx/model_q4.onnx",
+        "size": 165113221,
+        "sha256": "314976b7b9fba83283f9c8a29ee680a159fa485f52104e3fa39d3d5858337003"
+      },
+      {
+        "path": "onnx/model_q4f16.onnx",
+        "size": 111076526,
+        "sha256": "3dbab6709d866709a8f9df237fe9a008bd9ccfc30e32e4b8f7f5e085cdb68bf1"
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "size": 137296292,
+        "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27"
+      },
+      {
+        "path": "onnx/model_uint8.onnx",
+        "size": 137296322,
+        "sha256": "f7ee635388c995ea16eeeb50bc82269533b740be291ab13dc86df8977b5c31df"
+      },
+      {
+        "path": "onnx/model.onnx",
+        "size": 547310275,
+        "sha256": "147d5aa88c2101237358e17796cf3a227cead1ec304ec34b465bb08e9d952965"
+      },
+      {
+        "path": "README.md",
+        "size": 71843,
+        "sha256": "4430178908fbd574fdb6457e302d23e643d733ed036b5777180b0806946767b2"
+      },
+      {
+        "path": "sentence_bert_config.json",
+        "size": 58,
+        "sha256": "9ee3935137f87c9ce6662ae17fe7afb7c9c64744a41247359fd228dc37e627b3"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 695,
+        "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 1191,
+        "sha256": "d7e0000bcc80134debd2222220427e6bf5fa20a669f40a0d0d1409cc18e0a9bc"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 711396,
+        "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+      },
+      {
+        "path": "vocab.txt",
+        "size": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    ],
+    "magnet": "magnet:?xt=urn:btih:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b&dn=nomic-embed-text-v1.5&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fnomic-ai%2F"
   },
   {
-    "infohash": "0a81ac80a99edf60c372f7c4d2506b6943175482",
-    "name": "Mistral-Small-3.2-24B-Instruct",
-    "category": "llm",
-    "size_bytes": 50573239910,
-    "size": "47.1 GB",
-    "seeds": 856,
-    "leechers": 102,
-    "uploader": "CaptainHug",
+    "infohash": "ea150528ee00b941ac25cf6c48898ff36e266695",
+    "name": "whisper-large-v3",
+    "category": "aud",
+    "size_bytes": 24701693968,
+    "size": "23.0 GB",
+    "seeds": 1,
+    "leechers": 0,
+    "uploader": "syndicalt",
     "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-18T16:29:16.252Z",
+    "uploaded_at": "2026-07-23 18:56:22",
     "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-    "description": "BF16 safetensors plus Tekken tokenizer.",
+    "source_url": "https://huggingface.co/openai/whisper-large-v3",
+    "description": "Speech recognition workhorse. Full mirror of openai/whisper-large-v3 (safetensors + pt + tf + flax).",
     "verified": 2,
     "webseeds": [
-      "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/main/"
+      "https://thehuggingbay.io/ws/openai/"
     ],
-    "magnet": "magnet:?xt=urn:btih:0a81ac80a99edf60c372f7c4d2506b6943175482&dn=Mistral-Small-3.2-24B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmistralai%2FMistral-Small-3.2-24B-Instruct-2506%2Fresolve%2Fmain%2F"
+    "files": [
+      {
+        "path": "added_tokens.json",
+        "size": 34648,
+        "sha256": "3c51f66c4c21f9e126970078f11ae77a78c74aee8df606ee9daba86e467108e0"
+      },
+      {
+        "path": "config.json",
+        "size": 1272,
+        "sha256": "ad0e8d1e46f4d01f7861a21509e5d0f977d6cc1f367a370603c92541d819807b"
+      },
+      {
+        "path": "flax_model.msgpack",
+        "size": 6174007324,
+        "sha256": "e9c7b745947df8856bb809974ac7f9ef2704f7834ab1760fc925f38f8f5517f5"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 3903,
+        "sha256": "fbdfa70135de9b1d31553393f14e80aaeb1936ea36576b2ba864055943c09d23"
+      },
+      {
+        "path": "merges.txt",
+        "size": 493869,
+        "sha256": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6"
+      },
+      {
+        "path": "model.fp32-00001-of-00002.safetensors",
+        "size": 4993448880,
+        "sha256": "08e0005225b3dbaf55dd13ac62926cc7e02c1025d66fa375e6fb305ff79cd4f9"
+      },
+      {
+        "path": "model.fp32-00002-of-00002.safetensors",
+        "size": 1180663192,
+        "sha256": "630ca774672856d2e0e39a702e590f635a1cfc5726a64b6578ab46dd367369a9"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 3087130976,
+        "sha256": "a8e94b85976e5864ba3e9525c7e6c83b2a1eca42d4b797a0c7c24d778e40fd95"
+      },
+      {
+        "path": "model.safetensors.index.fp32.json",
+        "size": 117893,
+        "sha256": "bccecde4044933c7f3cbea731a5a4eb1e2dcbef1b9bc5f603d510b8361c45835"
+      },
+      {
+        "path": "normalizer.json",
+        "size": 52666,
+        "sha256": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 340,
+        "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711"
+      },
+      {
+        "path": "pytorch_model.bin",
+        "size": 3087394553,
+        "sha256": "8f3dd0108a56caf505b47740a385a6f61be03e670f4fc34e21e3d2bc98d7b6d1"
+      },
+      {
+        "path": "pytorch_model.bin.index.fp32.json",
+        "size": 117957,
+        "sha256": "321c26ca640af6ad1f00a0cb3a53cb47265a41e66399ae713d7dbbf0cd923b69"
+      },
+      {
+        "path": "pytorch_model.fp32-00001-of-00002.bin",
+        "size": 4993677094,
+        "sha256": "fed9e023b3519cba5b7279bdfbfd81aacfeb001f04bbe0cd9b8d1995a900b0d8"
+      },
+      {
+        "path": "pytorch_model.fp32-00002-of-00002.bin",
+        "size": 1180725482,
+        "sha256": "aadd3bdfecf9bc81e6ef6acf3c1ccaf3124c82eb06a94190064a28fdee096d64"
+      },
+      {
+        "path": "README.md",
+        "size": 21829,
+        "sha256": "b05416eb578e9fc65ce137f3401bafdf3bc2feac7448e7dd180dcd367b8cfb52"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 2072,
+        "sha256": "1c70773c078cb2ca96e0fcff113102f1d3e2b1504272c3bb63b035d4a6700d87"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 282843,
+        "sha256": "844b642c73a91359722f47b35705f7174686df33d252695d8572cf9ac03a6389"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 2480617,
+        "sha256": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca"
+      },
+      {
+        "path": "vocab.json",
+        "size": 1036558,
+        "sha256": "e2aa043ef015641d363d8288e7c241c85e36a5c761fb303598e0710233344387"
+      }
+    ],
+    "magnet": "magnet:?xt=urn:btih:ea150528ee00b941ac25cf6c48898ff36e266695&dn=whisper-large-v3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fopenai%2F"
   },
   {
-    "infohash": "b5d96d3ac7e8bb97b3d64ae23ef4b46790277b21",
+    "infohash": "de23e74caeb06e4c85801ec4933770e296479575",
     "name": "bge-m3",
     "category": "emb",
-    "size_bytes": 2469606195,
-    "size": "2.3 GB",
-    "seeds": 780,
-    "leechers": 39,
-    "uploader": "VectorJack",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-11T16:29:16.263Z",
+    "size_bytes": 4587309629,
+    "size": "4.3 GB",
+    "seeds": 1,
+    "leechers": 0,
+    "uploader": "syndicalt",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-23 18:56:22",
     "license": "MIT",
     "source_url": "https://huggingface.co/BAAI/bge-m3",
-    "description": "Dense + sparse + multi-vector retrieval in one checkpoint.",
+    "description": "Dense + sparse + multi-vector retrieval in one checkpoint. Full mirror of BAAI/bge-m3.",
     "verified": 2,
     "webseeds": [
-      "https://huggingface.co/BAAI/bge-m3/resolve/main/"
+      "https://thehuggingbay.io/ws/BAAI/"
     ],
-    "magnet": "magnet:?xt=urn:btih:b5d96d3ac7e8bb97b3d64ae23ef4b46790277b21&dn=bge-m3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FBAAI%2Fbge-m3%2Fresolve%2Fmain%2F"
+    "files": [
+      {
+        "path": "1_Pooling/config.json",
+        "size": 191,
+        "sha256": "e54c164a07274f2eb45bb724f54a79d1efcc90c41573887cd9a29aeee0597352"
+      },
+      {
+        "path": "colbert_linear.pt",
+        "size": 2100674,
+        "sha256": "19bfbae397c2b7524158c919d0e9b19393c5639d098f0a66932c91ed8f5f9abb"
+      },
+      {
+        "path": "config_sentence_transformers.json",
+        "size": 123,
+        "sha256": "1eef72430e7194a1e59680e635aed81ffa083f05668dbc5bb1c56c04c0999c38"
+      },
+      {
+        "path": "config.json",
+        "size": 687,
+        "sha256": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa"
+      },
+      {
+        "path": "imgs/bm25.jpg",
+        "size": 131849,
+        "sha256": "4d88d1c224dc6dae62b76547e1e79ed12e1085b94dc1fe0c50440a948277d89a"
+      },
+      {
+        "path": "imgs/long.jpg",
+        "size": 485432,
+        "sha256": "d2a44539154d2cee75abd032fe773d5514f1129b741c4641cde12554762709a6"
+      },
+      {
+        "path": "imgs/miracl.jpg",
+        "size": 576482,
+        "sha256": "a48c10a1be83aa7a92a25d85dbc6d2c0194b59503a2599a9e89bd7e063c32a66"
+      },
+      {
+        "path": "imgs/mkqa.jpg",
+        "size": 608027,
+        "sha256": "ae331fb64bdceeaafecc2f8cd89a2d55a3e41c429dcc5ba906cb9a7bdb73cf2b"
+      },
+      {
+        "path": "imgs/nqa.jpg",
+        "size": 158358,
+        "sha256": "5385ca9d6af4124932281039e1366d704d10ed81e905526f795f5732352394bb"
+      },
+      {
+        "path": "imgs/others.webp",
+        "size": 20984,
+        "sha256": "9222ef69ba79cbd3aa8c659bd3cbbf9d90b3dbb040526f56298ed9ceb05ec9df"
+      },
+      {
+        "path": "long.jpg",
+        "size": 126894,
+        "sha256": "4ba03433ef54575eeef5a291abd81661eb53c432677934dc4050565893e7a8a9"
+      },
+      {
+        "path": "modules.json",
+        "size": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+      },
+      {
+        "path": "onnx/config.json",
+        "size": 698,
+        "sha256": "f24afd5de914fba8c668426c43d208a1a54022500c63b2c160be20891686fce8"
+      },
+      {
+        "path": "onnx/Constant_7_attr__value",
+        "size": 65552,
+        "sha256": "cdf16f72c5d07b36484056e601ed9687f78477e5d85cee85a34f2406b7fb5906"
+      },
+      {
+        "path": "onnx/model.onnx",
+        "size": 724923,
+        "sha256": "f84251230831afb359ab26d9fd37d5936d4d9bb5d1d5410e66442f630f24435b"
+      },
+      {
+        "path": "onnx/model.onnx_data",
+        "size": 2266820608,
+        "sha256": "1eebfb28493f67bba03ce0ef64bfdc7fc5a3bd9d7493f818bb1d78cd798416b4"
+      },
+      {
+        "path": "onnx/sentencepiece.bpe.model",
+        "size": 5069051,
+        "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      {
+        "path": "onnx/special_tokens_map.json",
+        "size": 964,
+        "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835"
+      },
+      {
+        "path": "onnx/tokenizer_config.json",
+        "size": 1173,
+        "sha256": "7e4c1cc848840aeccdd763458c18dd525eb0f795c992e00ebe9c28554e7db2d4"
+      },
+      {
+        "path": "onnx/tokenizer.json",
+        "size": 17082821,
+        "sha256": "6710678b12670bc442b99edc952c4d996ae309a7020c1fa0096dd245c2faf790"
+      },
+      {
+        "path": "pytorch_model.bin",
+        "size": 2271145830,
+        "sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38"
+      },
+      {
+        "path": "README.md",
+        "size": 15822,
+        "sha256": "0b81ccf9134e5874d620a86e6905062ea999e779c34eb1a7e65eaeb7fe00e450"
+      },
+      {
+        "path": "sentence_bert_config.json",
+        "size": 54,
+        "sha256": "eb9b44b13c0f52a3b3685c3b1cbdea1ba8b04bea123b98f61610048940776eb1"
+      },
+      {
+        "path": "sentencepiece.bpe.model",
+        "size": 5069051,
+        "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      {
+        "path": "sparse_linear.pt",
+        "size": 3516,
+        "sha256": "45c93804d2142b8f6d7ec6914ae23a1eee9c6a1d27d83d908a20d2afb3595ad9"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 964,
+        "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 444,
+        "sha256": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 17098108,
+        "sha256": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08"
+      }
+    ],
+    "magnet": "magnet:?xt=urn:btih:de23e74caeb06e4c85801ec4933770e296479575&dn=bge-m3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2FBAAI%2F"
   },
   {
-    "infohash": "728bbd36f2e1c836673af3d9dcd74c69913d5ac6",
-    "name": "Phi-4",
-    "category": "llm",
-    "size_bytes": 31460635443,
-    "size": "29.3 GB",
-    "seeds": 634,
-    "leechers": 71,
-    "uploader": "UI-Corsair",
-    "uploader_rank": "Sailor",
-    "uploaded_at": "2026-07-14T16:29:16.256Z",
-    "license": "MIT",
-    "source_url": "https://huggingface.co/microsoft/phi-4",
-    "description": "14B dense model, MIT-licensed, great laptop-class daily driver.",
-    "verified": 1,
-    "webseeds": [
-      "https://huggingface.co/microsoft/phi-4/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:728bbd36f2e1c836673af3d9dcd74c69913d5ac6&dn=Phi-4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmicrosoft%2Fphi-4%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "e1245e07b38876da68866264621b684540bb63af",
+    "infohash": "61f17a1742723b1e91263ed1c859d12f33b14ce3",
     "name": "Kokoro-82M",
     "category": "aud",
-    "size_bytes": 342884352,
-    "size": "327 MB",
-    "seeds": 610,
-    "leechers": 22,
-    "uploader": "UI-Corsair",
-    "uploader_rank": "Sailor",
-    "uploaded_at": "2026-07-12T16:29:16.283Z",
+    "size_bytes": 363321844,
+    "size": "346 MB",
+    "seeds": 1,
+    "leechers": 0,
+    "uploader": "syndicalt",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-23 18:56:22",
     "license": "Apache-2.0",
     "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
-    "description": "Tiny high-quality TTS. Fits on anything.",
-    "verified": 1,
-    "webseeds": [
-      "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:e1245e07b38876da68866264621b684540bb63af&dn=Kokoro-82M&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fhexgrad%2FKokoro-82M%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "95f9034146c88da599958c22f3ceff91861a0ea8",
-    "name": "Qwen3-Embedding-8B",
-    "category": "emb",
-    "size_bytes": 17287243366,
-    "size": "16.1 GB",
-    "seeds": 512,
-    "leechers": 44,
-    "uploader": "VectorJack",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-20T16:29:16.259Z",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
-    "description": "Top-of-leaderboard multilingual embedding model.",
+    "description": "Tiny high-quality TTS (82M params). Full mirror of the hexgrad/Kokoro-82M HF repo incl. all voicepacks.",
     "verified": 2,
     "webseeds": [
-      "https://huggingface.co/Qwen/Qwen3-Embedding-8B/resolve/main/"
+      "https://thehuggingbay.io/ws/hexgrad/"
     ],
-    "magnet": "magnet:?xt=urn:btih:95f9034146c88da599958c22f3ceff91861a0ea8&dn=Qwen3-Embedding-8B&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen3-Embedding-8B%2Fresolve%2Fmain%2F"
+    "files": [
+      {
+        "path": "config.json",
+        "size": 2351,
+        "sha256": "5abb01e2403b072bf03d04fde160443e209d7a0dad49a423be15196b9b43c17f"
+      },
+      {
+        "path": "DONATE.md",
+        "size": 2562,
+        "sha256": "cf31b6b09359786af5ec0de74b59b026b1fdaa0f575c8f64f221a74274ce433b"
+      },
+      {
+        "path": "eval/ArtificialAnalysis-2025-02-26.jpeg",
+        "size": 939504,
+        "sha256": "a312447a7801982507545380cce5d5ab5ef60081a5edb2001ca096b19f8f4621"
+      },
+      {
+        "path": "eval/TTS_Arena-2025-02-26.jpeg",
+        "size": 560066,
+        "sha256": "f2caf29f9ad1108cdbf892dc6713423882a8e006c99930f61a17e15a79c3ef6f"
+      },
+      {
+        "path": "eval/TTS_Spaces_Arena-2025-02-26.jpeg",
+        "size": 515255,
+        "sha256": "b095b1048199fd2b23971595226c1c29200a779ff310c90273b766aa3f725fc9"
+      },
+      {
+        "path": "EVAL.md",
+        "size": 534,
+        "sha256": "9b4d7a54809bf22127d19d936d9e749249e1a655e2e0a1df8a6546f77a819658"
+      },
+      {
+        "path": "kokoro-v1_0.pth",
+        "size": 327212226,
+        "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4"
+      },
+      {
+        "path": "README.md",
+        "size": 6348,
+        "sha256": "91dcabced89db6f109b8786642f50402d3ee87450e8189589b6f85520e7f4d78"
+      },
+      {
+        "path": "samples/af_heart_0.wav",
+        "size": 237644,
+        "sha256": "dd7999ebbc8369779d5d3f504399ea466c909339f90231143416a7819a2047fc"
+      },
+      {
+        "path": "samples/af_heart_1.wav",
+        "size": 517244,
+        "sha256": "2fe4f363b785fdc233f94dd1885c94a2267f7ceeea8c7fb5cce6bfcf0f7b273d"
+      },
+      {
+        "path": "samples/af_heart_2.wav",
+        "size": 496844,
+        "sha256": "68ee75b2d503415a5b6edbd5230c823fbeb6b430d546b8c37e2284efcf280be8"
+      },
+      {
+        "path": "samples/af_heart_3.wav",
+        "size": 1407644,
+        "sha256": "e758efcd852e77569772ee5a424df724695903db61a323a6021ee1c6a50ca616"
+      },
+      {
+        "path": "samples/af_heart_4.wav",
+        "size": 1116044,
+        "sha256": "d50c90f447686200052f4375dee55a3406ec0aa140473cf946e98fdfe860989b"
+      },
+      {
+        "path": "samples/af_heart_5.wav",
+        "size": 1033244,
+        "sha256": "bc4515b9479c219e4e9347463a859ea6716dd0eb45a520f5f42825a7662b5054"
+      },
+      {
+        "path": "samples/HEARME.wav",
+        "size": 996044,
+        "sha256": "aad38e96fa60c91c995ac820ce6e86c28b0df7300177c0d3ca0766b9dc78feec"
+      },
+      {
+        "path": "SAMPLES.md",
+        "size": 5956,
+        "sha256": "96b7cc1978491ae89097367952c563d1f7110ae15473a7f5353a0f84b39cc6d1"
+      },
+      {
+        "path": "voices/af_alloy.pt",
+        "size": 523425,
+        "sha256": "6d877149dd8b348fbad12e5845b7e43d975390e9f3b68a811d1d86168bef5aa3"
+      },
+      {
+        "path": "voices/af_aoede.pt",
+        "size": 523425,
+        "sha256": "c03bd1a4c3716c2d8eaa3d50022f62d5c31cfbd6e15933a00b17fefe13841cc4"
+      },
+      {
+        "path": "voices/af_bella.pt",
+        "size": 523425,
+        "sha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6"
+      },
+      {
+        "path": "voices/af_heart.pt",
+        "size": 523425,
+        "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff"
+      },
+      {
+        "path": "voices/af_jessica.pt",
+        "size": 523435,
+        "sha256": "cdfdccb8cc975aa34ee6b89642963b0064237675de0e41a30ae64cc958dd4e87"
+      },
+      {
+        "path": "voices/af_kore.pt",
+        "size": 523420,
+        "sha256": "8bfbc512321c3db49dff984ac675fa5ac7eaed5a96cc31104d3a9080e179d69d"
+      },
+      {
+        "path": "voices/af_nicole.pt",
+        "size": 523430,
+        "sha256": "c5561808bcf5250fe8c5f5de32caf2d94f27e57e95befdb098c5c85991d4c5da"
+      },
+      {
+        "path": "voices/af_nova.pt",
+        "size": 523420,
+        "sha256": "e0233676ddc21908c37a1f102f6b88a59e4e5c1bd764983616eb9eda629dbcd2"
+      },
+      {
+        "path": "voices/af_river.pt",
+        "size": 523425,
+        "sha256": "e149459bd9c084416b74756b9bd3418256a8b839088abb07d463730c369dab8f"
+      },
+      {
+        "path": "voices/af_sarah.pt",
+        "size": 523425,
+        "sha256": "49bd364ea3be9eb3e9685e8f9a15448c4883112a7c0ff7ab139fa4088b08cef9"
+      },
+      {
+        "path": "voices/af_sky.pt",
+        "size": 523351,
+        "sha256": "c799548aed06e0cb0d655a85a01b48e7f10484d71663f9a3045a5b9362e8512c"
+      },
+      {
+        "path": "voices/am_adam.pt",
+        "size": 523420,
+        "sha256": "ced7e284aba12472891be1da3ab34db84cc05cc02b5889535796dbf2d8b0cb34"
+      },
+      {
+        "path": "voices/am_echo.pt",
+        "size": 523420,
+        "sha256": "8bcfdc852bc985fb45c396c561e571ffb9183930071f962f1b50df5c97b161e8"
+      },
+      {
+        "path": "voices/am_eric.pt",
+        "size": 523420,
+        "sha256": "ada66f0eefff34ec921b1d7474d7ac8bec00cd863c170f1c534916e9b8212aae"
+      },
+      {
+        "path": "voices/am_fenrir.pt",
+        "size": 523430,
+        "sha256": "98e507eca1db08230ae3b6232d59c10aec9630022d19accac4f5d12fcec3c37a"
+      },
+      {
+        "path": "voices/am_liam.pt",
+        "size": 523420,
+        "sha256": "c82550757ddb31308b97f30040dda8c2d609a9e2de6135848d0a948368138518"
+      },
+      {
+        "path": "voices/am_michael.pt",
+        "size": 523435,
+        "sha256": "9a443b79a4b22489a5b0ab7c651a0bcd1a30bef675c28333f06971abbd47bd37"
+      },
+      {
+        "path": "voices/am_onyx.pt",
+        "size": 523420,
+        "sha256": "e8452be16cd0f6da7b4579eaf7b1e4506e92524882053d86d72b96b9a7fed584"
+      },
+      {
+        "path": "voices/am_puck.pt",
+        "size": 523420,
+        "sha256": "dd1d8973f4ce4b7d8ae407c77a435f485dabc052081b80ea75c4f30b84f36223"
+      },
+      {
+        "path": "voices/am_santa.pt",
+        "size": 523425,
+        "sha256": "7f2f7582fa2b1f160e90aafe6d0b442a685e773608b6667e545d743b073e97a7"
+      },
+      {
+        "path": "voices/bf_alice.pt",
+        "size": 523425,
+        "sha256": "d292651b6af6c0d81705c2580dcb4463fccc0ff7b8d618a471dbb4e45655b3f3"
+      },
+      {
+        "path": "voices/bf_emma.pt",
+        "size": 523420,
+        "sha256": "d0a423deabf4a52b4f49318c51742c54e21bb89bbbe9a12141e7758ddb5da701"
+      },
+      {
+        "path": "voices/bf_isabella.pt",
+        "size": 523440,
+        "sha256": "cdd4c37003805104d1d08fb1e05855c8fb2c68de24ca6e71f264a30aaa59eefd"
+      },
+      {
+        "path": "voices/bf_lily.pt",
+        "size": 523420,
+        "sha256": "6e09c2e481e2d53004d7e5ae7d3a325369e130a6f45c35a6002de75084be9285"
+      },
+      {
+        "path": "voices/bm_daniel.pt",
+        "size": 523430,
+        "sha256": "fc3fce4e9c12ed4dbc8fa9680cfe51ee190a96444ce7c3ad647549a30823fc5d"
+      },
+      {
+        "path": "voices/bm_fable.pt",
+        "size": 523425,
+        "sha256": "d44935f3135257a9064df99f007fc1342ff1aa767552b4a4fa4c3b2e6e59079c"
+      },
+      {
+        "path": "voices/bm_george.pt",
+        "size": 523430,
+        "sha256": "f1bc812213dc59774769e5c80004b13eeb79bd78130b11b2d7f934542dab811b"
+      },
+      {
+        "path": "voices/bm_lewis.pt",
+        "size": 523425,
+        "sha256": "b5204750dcba01029d2ac9cec17aec3b20a6d64073c579d694a23cb40effbd0e"
+      },
+      {
+        "path": "voices/ef_dora.pt",
+        "size": 523420,
+        "sha256": "d9d69b0f8a2b87a345f269d89639f89dfbd1a6c9da0c498ae36dd34afcf35530"
+      },
+      {
+        "path": "voices/em_alex.pt",
+        "size": 523420,
+        "sha256": "5eac53f767c3f31a081918ba531969aea850bed18fe56419b804d642c6973431"
+      },
+      {
+        "path": "voices/em_santa.pt",
+        "size": 523430,
+        "sha256": "aa8620cb96cec705823efca0d956a63e158e09ad41aca934d354b7f0778f63cb"
+      },
+      {
+        "path": "voices/ff_siwis.pt",
+        "size": 523425,
+        "sha256": "8073bf2d2c4b9543a90f2f0fd2144de4ed157e2d4b79ddeb0d5123066171fbc9"
+      },
+      {
+        "path": "voices/hf_alpha.pt",
+        "size": 523425,
+        "sha256": "06906fe05746d13a79c5c01e21fd7233b05027221a933c9ada650f5aafc8f044"
+      },
+      {
+        "path": "voices/hf_beta.pt",
+        "size": 523420,
+        "sha256": "63c0a1a6272e98d43f4511bba40e30dd9c8ceaf5f39af869509b9f51a71c503e"
+      },
+      {
+        "path": "voices/hm_omega.pt",
+        "size": 523425,
+        "sha256": "b55f02a8e8483fffe0afa566e7d22ed8013acf47ad4f6bbee2795a840155703e"
+      },
+      {
+        "path": "voices/hm_psi.pt",
+        "size": 523351,
+        "sha256": "2f0f055cea4f1083f4ef127ece48d71606347f6557dbb961c0ca5740a2da485b"
+      },
+      {
+        "path": "voices/if_sara.pt",
+        "size": 523425,
+        "sha256": "6c0b253b955fe32f1a1a86006aebe83d050ea95afd0e7be15182f087deedbf55"
+      },
+      {
+        "path": "voices/im_nicola.pt",
+        "size": 523341,
+        "sha256": "234ed06648649f9bd874b37508ea17560b9c993ef85b4ddb3e3a71e062bd2c12"
+      },
+      {
+        "path": "voices/jf_alpha.pt",
+        "size": 523425,
+        "sha256": "1bf4c9dc69e45ee46183b071f4db766349aac5592acbcfeaf051018048a5d787"
+      },
+      {
+        "path": "voices/jf_gongitsune.pt",
+        "size": 523351,
+        "sha256": "1b171917f18f351e65f2bf9657700cd6bfec4e65589c297525b9cf3c20105770"
+      },
+      {
+        "path": "voices/jf_nezumi.pt",
+        "size": 523420,
+        "sha256": "d83f007a7f01783b77014561a7d493d327a0210e143440e91c9b697590d27661"
+      },
+      {
+        "path": "voices/jf_tebukuro.pt",
+        "size": 523435,
+        "sha256": "0d6917904438aec85f73a6fa1f7ac2be6481aae47c697834936930a91796c576"
+      },
+      {
+        "path": "voices/jm_kumo.pt",
+        "size": 523425,
+        "sha256": "98340afd68b1cee84fe0cd95528cfa6d4b39e416aa75a9df64049d52c8b55896"
+      },
+      {
+        "path": "voices/pf_dora.pt",
+        "size": 523425,
+        "sha256": "07e4ff987c5d5a8c3995efd15cc4f0db7c4c15e881b198d8ab7f67ecf51f5eb7"
+      },
+      {
+        "path": "voices/pm_alex.pt",
+        "size": 523425,
+        "sha256": "cf0ba8c573c2480fc54123683a35cf1e2ae130428e441eb91f9149bdb188a526"
+      },
+      {
+        "path": "voices/pm_santa.pt",
+        "size": 523430,
+        "sha256": "d42103169c5c872abbafb9129133af7e942bb9d272c3cc3b95c203e7d7198c29"
+      },
+      {
+        "path": "voices/zf_xiaobei.pt",
+        "size": 523435,
+        "sha256": "9b76be63dab4f4f96962030acc0126a9aee9728608fbbe115e2b58a2bd504df6"
+      },
+      {
+        "path": "voices/zf_xiaoni.pt",
+        "size": 523430,
+        "sha256": "95b49f169bf1640f4f43c25e13daa39f7b98d15d00823e83ef5c14b3ced59e49"
+      },
+      {
+        "path": "voices/zf_xiaoxiao.pt",
+        "size": 523440,
+        "sha256": "cfaf6f2ded1ee56f1ff94fcd2b0e6cdf32e5b794bdc05b44e7439d44aef5887c"
+      },
+      {
+        "path": "voices/zf_xiaoyi.pt",
+        "size": 523430,
+        "sha256": "b5235dbaeef85a4c613bf78af9a88ff63c25bac5f26ba77e36186d8b7ebf05e2"
+      },
+      {
+        "path": "voices/zm_yunjian.pt",
+        "size": 523435,
+        "sha256": "76cbf8bad35901d011d9628a2fdceb7b4f1f127e7a3269cb393b3941eb7fc417"
+      },
+      {
+        "path": "voices/zm_yunxi.pt",
+        "size": 523425,
+        "sha256": "dbe6e1ce7c3dbaf2f5667432947b638b1c6831ccbe154c4610dbcc44f431e27b"
+      },
+      {
+        "path": "voices/zm_yunxia.pt",
+        "size": 523430,
+        "sha256": "bb2b03b08e84d64e1214440ce3b624987fac177f2eeb5bab8571799a3d980acd"
+      },
+      {
+        "path": "voices/zm_yunyang.pt",
+        "size": 523435,
+        "sha256": "5238ac22e0c7f8b6cdd2eddd6e444b8a700b73c4674d9a047d59a94ff96379a2"
+      },
+      {
+        "path": "VOICES.md",
+        "size": 7625,
+        "sha256": "ec7e4941ad7e194af61e3455928528a9ff5360c7c505e412efab27d6a69ea106"
+      }
+    ],
+    "magnet": "magnet:?xt=urn:btih:61f17a1742723b1e91263ed1c859d12f33b14ce3&dn=Kokoro-82M&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fhexgrad%2F"
   },
   {
-    "infohash": "846f6a3d5991bda7b211ed84930f187600771c8d",
-    "name": "comfyui-portable-linux",
-    "category": "app",
-    "size_bytes": 2040109466,
-    "size": "1.9 GB",
-    "seeds": 505,
-    "leechers": 27,
-    "uploader": "UI-Corsair",
+    "infohash": "6abb2d5b54555764485c1458aefeba8b00d6e841",
+    "name": "hugging-bay-catalog-2026-07-23",
+    "category": "data",
+    "size_bytes": 28903,
+    "size": "28 KB",
+    "seeds": 0,
+    "leechers": 0,
+    "uploader": "the-bay-itself",
     "uploader_rank": "Sailor",
-    "uploaded_at": "2026-07-17T16:29:16.305Z",
-    "license": "GPL-3.0",
-    "source_url": "https://github.com/comfyanonymous/ComfyUI",
-    "description": "Portable ComfyUI bundle with common custom nodes preinstalled.",
-    "verified": 1,
-    "webseeds": [],
-    "magnet": "magnet:?xt=urn:btih:846f6a3d5991bda7b211ed84930f187600771c8d&dn=comfyui-portable-linux&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
-  },
-  {
-    "infohash": "557b8d81d70f4d1fc87c2d120bb0a212cc4a09aa",
-    "name": "GLM-4.5-Air",
-    "category": "llm",
-    "size_bytes": 228707008512,
-    "size": "213.0 GB",
-    "seeds": 421,
-    "leechers": 88,
-    "uploader": "SeaLLM",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-15T16:29:16.249Z",
-    "license": "MIT",
-    "source_url": "https://huggingface.co/zai-org/GLM-4.5-Air",
-    "description": "BF16 weights of the 106B GLM-4.5-Air.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/zai-org/GLM-4.5-Air/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:557b8d81d70f4d1fc87c2d120bb0a212cc4a09aa&dn=GLM-4.5-Air&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fzai-org%2FGLM-4.5-Air%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "d78110ba64b08682f3c41d55a2eb6de97a777681",
-    "name": "Qwen3-Coder-30B-A3B-Instruct",
-    "category": "agt",
-    "size_bytes": 65605625446,
-    "size": "61.1 GB",
-    "seeds": 402,
-    "leechers": 77,
-    "uploader": "SeaLLM",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-19T16:29:16.290Z",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
-    "description": "Agentic coding MoE — strong tool-use and repo-scale editing.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:d78110ba64b08682f3c41d55a2eb6de97a777681&dn=Qwen3-Coder-30B-A3B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen3-Coder-30B-A3B-Instruct%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "390c5a7bbd40f5f45b3d6819dfed5e66ee2cc221",
-    "name": "hugging-bay-sticker-pack",
-    "category": "meme",
-    "size_bytes": 12582912,
-    "size": "12 MB",
-    "seeds": 333,
-    "leechers": 4,
-    "uploader": "CaptainHug",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-22T16:29:16.308Z",
+    "uploaded_at": "2026-07-23 21:36:54",
     "license": "CC0-1.0",
-    "source_url": "https://thehuggingbay.example/stickers",
-    "description": "The official 🤗🏴‍☠️ sticker pack. Hug more. Gatekeep less.",
-    "verified": 2,
+    "source_url": "https://thehuggingbay.io/catalog",
+    "description": "Full index snapshot 2026-07-23: 4 listings. fingerprint:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b,61f17a1742723b1e91263ed1c859d12f33b14ce3,de23e74caeb06e4c85801ec4933770e296479575,ea150528ee00b941ac25cf6c48898ff36e266695",
+    "verified": 0,
     "webseeds": [],
-    "magnet": "magnet:?xt=urn:btih:390c5a7bbd40f5f45b3d6819dfed5e66ee2cc221&dn=hugging-bay-sticker-pack&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
-  },
-  {
-    "infohash": "78a58d5ed09bd0490a32b9da0f1af7114b8cad8f",
-    "name": "Qwen2.5-VL-72B-Instruct",
-    "category": "vis",
-    "size_bytes": 147317378253,
-    "size": "137.2 GB",
-    "seeds": 289,
-    "leechers": 67,
-    "uploader": "SeaLLM",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-16T16:29:16.273Z",
-    "license": "Qwen-License",
-    "source_url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
-    "description": "Vision-language flagship: grounding, video understanding, document parsing.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/resolve/main/"
+    "files": [
+      {
+        "path": "catalog.json",
+        "size": 28281,
+        "sha256": "b02908a9abf95cda7dc23354acb2e56086c2cf82fa1cf7eb55d0affc4cbffba3"
+      },
+      {
+        "path": "README.md",
+        "size": 622,
+        "sha256": "d7511159967d49d77a1affb0aba962654b6938374477839ae15e00043dd01f41"
+      }
     ],
-    "magnet": "magnet:?xt=urn:btih:78a58d5ed09bd0490a32b9da0f1af7114b8cad8f&dn=Qwen2.5-VL-72B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen2.5-VL-72B-Instruct%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "18206eec1381b518a31bb76e54e91444c8deaa88",
-    "name": "OpenOrca",
-    "category": "data",
-    "size_bytes": 6871947674,
-    "size": "6.4 GB",
-    "seeds": 240,
-    "leechers": 12,
-    "uploader": "DataBuccaneer",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-06-13T16:29:16.298Z",
-    "license": "MIT",
-    "source_url": "https://huggingface.co/datasets/Open-Orca/OpenOrca",
-    "description": "Classic instruction-tuning dataset, parquet.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/datasets/Open-Orca/OpenOrca/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:18206eec1381b518a31bb76e54e91444c8deaa88&dn=OpenOrca&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdatasets%2FOpen-Orca%2FOpenOrca%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "7c0b63ea93cf71b0b06e61c9e1a88518485fcf44",
-    "name": "OpenHands-LM-32B",
-    "category": "agt",
-    "size_bytes": 69471096013,
-    "size": "64.7 GB",
-    "seeds": 187,
-    "leechers": 34,
-    "uploader": "DataBuccaneer",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-13T16:29:16.286Z",
-    "license": "MIT",
-    "source_url": "https://huggingface.co/all-hands/openhands-lm-32b-v0.1",
-    "description": "Coding-agent tuned 32B for autonomous software tasks.",
-    "verified": 1,
-    "webseeds": [
-      "https://huggingface.co/all-hands/openhands-lm-32b-v0.1/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:7c0b63ea93cf71b0b06e61c9e1a88518485fcf44&dn=OpenHands-LM-32B&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fall-hands%2Fopenhands-lm-32b-v0.1%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "eeb95f69813a6fc767717023f8168ba495e63a45",
-    "name": "Kimi-K2-Instruct",
-    "category": "llm",
-    "size_bytes": 1132496976609,
-    "size": "1.03 TB",
-    "seeds": 148,
-    "leechers": 96,
-    "uploader": "PetabytePete",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-17T16:29:16.246Z",
-    "license": "Modified-MIT",
-    "source_url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
-    "description": "1T-parameter MoE, FP8 block format. The biggest ship in the harbor — seeders with real bandwidth wanted.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/moonshotai/Kimi-K2-Instruct/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:eeb95f69813a6fc767717023f8168ba495e63a45&dn=Kimi-K2-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmoonshotai%2FKimi-K2-Instruct%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "f671dc4ffbc6f5b80ede91c58cf067c4d3e23cfa",
-    "name": "fineweb-edu-sample-100BT",
-    "category": "data",
-    "size_bytes": 248463858074,
-    "size": "231.4 GB",
-    "seeds": 96,
-    "leechers": 41,
-    "uploader": "DataBuccaneer",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-09T16:29:16.294Z",
-    "license": "ODC-By-1.0",
-    "source_url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
-    "description": "100B-token educational-quality web sample. Parquet shards, original layout.",
-    "verified": 2,
-    "webseeds": [
-      "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:f671dc4ffbc6f5b80ede91c58cf067c4d3e23cfa&dn=fineweb-edu-sample-100BT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdatasets%2FHuggingFaceFW%2Ffineweb-edu%2Fresolve%2Fmain%2F"
-  },
-  {
-    "infohash": "86b9560153cbb31df197b26f59bce50300ce4a7d",
-    "name": "smollm-corpus",
-    "category": "data",
-    "size_bytes": 1209462790554,
-    "size": "1.10 TB",
-    "seeds": 31,
-    "leechers": 18,
-    "uploader": "PetabytePete",
-    "uploader_rank": "First Mate",
-    "uploaded_at": "2026-07-01T16:29:16.301Z",
-    "license": "ODC-By-1.0",
-    "source_url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus",
-    "description": "Full pretraining corpus for small models. Under-seeded — sailors needed.",
-    "verified": 1,
-    "webseeds": [
-      "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/main/"
-    ],
-    "magnet": "magnet:?xt=urn:btih:86b9560153cbb31df197b26f59bce50300ce4a7d&dn=smollm-corpus&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdatasets%2FHuggingFaceTB%2Fsmollm-corpus%2Fresolve%2Fmain%2F"
+    "magnet": "magnet:?xt=urn:btih:6abb2d5b54555764485c1458aefeba8b00d6e841&dn=hugging-bay-catalog-2026-07-23&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
   }
 ]

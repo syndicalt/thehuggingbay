@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Upload — The Hugging Bay</title>
+<meta name="description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite. ⛵">
+<meta property="og:site_name" content="The Hugging Bay">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Upload — The Hugging Bay">
+<meta property="og:description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite.">
+<meta property="og:image" content="https://thehuggingbay.io/card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://thehuggingbay.io/card.jpg">
 <link rel="stylesheet" href="/thehuggingbay/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤗</text></svg>">
 </head>
@@ -20,14 +30,16 @@
   </nav>
 </header>
 <h2>Upload a torrent</h2>
-<p class="warn"><b>Static demo:</b> this page is served from GitHub Pages, so uploads are
-disabled here. Clone the repo and run <code>node server.mjs</code> for the full Bay, or open a GitHub issue
-with your magnet + license + upstream link.</p>
+<p class="warn"><b>Static mirror:</b> this copy of the Bay is read-only, so uploads are
+disabled here. Use the <a href="https://thehuggingbay.io/submit">primary index</a>, run your own
+(<code>node server.mjs</code>), or open a GitHub issue with your magnet + license + upstream link.</p>
 
 
 <p class="warn"><b>Open licenses only.</b> The artifact's license must explicitly permit redistribution.
 No gated repos, no leaked weights, no “trust me bro” licenses. Listings start as
 <b>Unverified</b> until a Captain confirms the SHA-256 manifest against the upstream release.</p>
+<p class="notice">Prefer the CLI: <code>node bay-cli.mjs create &lt;hf-repo-or-dir&gt; --publish</code> builds the
+torrent, computes the manifest, and publishes here in one step.</p>
 <form class="upload" onsubmit="alert('Static demo — run the server locally to upload.'); return false;" method="post" action="/submit">
   <label>Name</label><input name="name" required maxlength="200" placeholder="Llama-3.1-70B-Instruct">
   <label>Infohash (40-char hex, BTv1)</label><input name="infohash" required pattern="[a-fA-F0-9]{40}" placeholder="e.g. from your torrent client">
@@ -41,8 +53,10 @@ No gated repos, no leaked weights, no “trust me bro” licenses. Listings star
 </form>
 <footer>
   <nav>
-    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/api">API</a> |
-    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a>
+    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/mirrors">Mirrors</a> |
+    <a href="/thehuggingbay/catalog">Catalog</a> | <a href="/thehuggingbay/api">API</a> |
+    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a> |
+    <a href="https://buymeacoffee.com/corelumen" rel="noopener">☕ Buy us a coffee</a>
   </nav>
   <p class="tagline">🤗 Hug more. Gatekeep less. 🏴‍☠️</p>
   <p class="fine">The Hugging Bay indexes magnet links for openly-licensed AI artifacts only. No files are hosted here.</p>

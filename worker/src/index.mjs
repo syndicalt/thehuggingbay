@@ -59,6 +59,10 @@ const topUploaders = async (db) => (await db.prepare(`
   GROUP BY u.id ORDER BY uploads DESC, bytes DESC LIMIT 10
 `).all()).results;
 
+const latestCatalog = (db) => db.prepare(
+  BASE_SELECT + " WHERE t.name LIKE 'hugging-bay-catalog-%' ORDER BY t.uploaded_at DESC LIMIT 1"
+).first();
+
 const categoryCounts = async (db) => (await db.prepare(
   'SELECT category, COUNT(*) AS n, SUM(size_bytes) AS bytes FROM torrents GROUP BY category'
 ).all()).results;
@@ -168,6 +172,12 @@ export default {
         if (path === '/fleet') {
           const { totals, underSeeded } = await fleetStats(db);
           return html(views.fleetView({ totals, underSeeded, sailors: await topUploaders(db) }));
+        }
+        if (path === '/catalog') return html(views.catalogView({ latest: await latestCatalog(db) }));
+        if (path === '/mirrors') return html(views.mirrorsView({ latest: await latestCatalog(db) }));
+        if (path === '/api/catalog') {
+          const c = await latestCatalog(db);
+          return c ? json(views.torrentJson(c)) : json({ error: 'no catalog yet' }, 404);
         }
         if (path === '/api') return html(views.apiDocsView());
         if (path === '/about') return html(views.aboutView());

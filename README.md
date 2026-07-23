@@ -97,6 +97,18 @@ npx wrangler secret put SCRAPE_TOKEN
 npx wrangler deploy                          # custom domains: thehuggingbay.io, www
 ```
 
+## Mirrors & the catalog torrent
+
+The index is deliberately hard to kill:
+
+- **Primary:** https://thehuggingbay.io (Worker + D1, uploads enabled)
+- **Static mirrors** (read-only, refreshed daily by `scripts/refresh-mirrors.sh`):
+  https://the-hugging-bay.syndicalt.workers.dev and https://syndicalt.github.io/thehuggingbay/
+- **Catalog-as-torrent:** `bay-catalog.mjs` snapshots the entire index (every magnet, license,
+  and SHA-256 manifest) into a small CC0 torrent, seeds it, and lists it. Latest magnet is
+  always at [/catalog](https://thehuggingbay.io/catalog) (`GET /api/catalog` for JSON).
+  Anyone seeding the catalog carries the whole map — the index survives its own servers.
+
 ## Design principles
 
 1. **Index only, never host.** Magnets + infohashes; the swarm carries the bytes.

@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>API — The Hugging Bay</title>
+<meta name="description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite. ⛵">
+<meta property="og:site_name" content="The Hugging Bay">
+<meta property="og:type" content="website">
+<meta property="og:title" content="API — The Hugging Bay">
+<meta property="og:description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite.">
+<meta property="og:image" content="https://thehuggingbay.io/card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://thehuggingbay.io/card.jpg">
 <link rel="stylesheet" href="/thehuggingbay/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤗</text></svg>">
 </head>
@@ -22,19 +32,22 @@
 <div class="prose">
 <h2>API</h2>
 <p>Everything on the Bay is available as JSON. No keys, no rate limits (yet). Intended for the
-torrent-creation CLI, seedbox automation, and mirrors.</p>
+<code>bay-cli</code> torrent tool, seedbox automation, and mirrors.</p>
 <pre class="code">GET /api/torrents?q=llama&amp;cat=llm&amp;sort=seeds&amp;limit=50
 GET /api/torrent/&lt;infohash&gt;
 GET /api/stats
-POST /api/torrents        (same fields as the upload form, JSON body)</pre>
+POST /api/torrents        (same fields as the upload form, JSON body)
+POST /api/scrape          (seed-count updates; bearer token, used by the fleet scraper)</pre>
 <p>Every torrent object includes <code>magnet</code>, <code>infohash</code>, <code>license</code>,
-<code>source_url</code>, <code>webseeds</code>, and <code>verified</code> (0 = unverified,
-1 = community, 2 = captain).</p>
+<code>source_url</code>, <code>webseeds</code>, <code>files</code> (SHA-256 manifest), and
+<code>verified</code> (0 = unverified, 1 = community, 2 = captain).</p>
 </div>
 <footer>
   <nav>
-    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/api">API</a> |
-    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a>
+    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/mirrors">Mirrors</a> |
+    <a href="/thehuggingbay/catalog">Catalog</a> | <a href="/thehuggingbay/api">API</a> |
+    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a> |
+    <a href="https://buymeacoffee.com/corelumen" rel="noopener">☕ Buy us a coffee</a>
   </nav>
   <p class="tagline">🤗 Hug more. Gatekeep less. 🏴‍☠️</p>
   <p class="fine">The Hugging Bay indexes magnet links for openly-licensed AI artifacts only. No files are hosted here.</p>

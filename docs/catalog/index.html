@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Policy — The Hugging Bay</title>
+<title>Catalog — The Hugging Bay</title>
 <meta name="description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite. ⛵">
 <meta property="og:site_name" content="The Hugging Bay">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Policy — The Hugging Bay">
+<meta property="og:title" content="Catalog — The Hugging Bay">
 <meta property="og:description" content="A community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite.">
 <meta property="og:image" content="https://thehuggingbay.io/card.jpg">
 <meta property="og:image:width" content="1200">
@@ -30,25 +30,19 @@
   </nav>
 </header>
 <div class="prose">
-<h2>Content policy</h2>
-<p>The Hugging Bay indexes only artifacts whose licenses <b>explicitly permit redistribution</b>:
-Apache-2.0, MIT, BSD, CC and ODC families, OpenRAIL variants, and community licenses that grant
-redistribution rights (e.g. Llama Community, Gemma, Qwen). The pirate flag is aesthetic; the
-cargo is legal.</p>
-<ul>
-<li><b>Never listed:</b> gated or access-controlled repos, leaked or proprietary weights, artifacts
-with no license or a no-redistribution clause, and anything containing private data.</li>
-<li><b>Attribution preserved:</b> listings must link the upstream source; torrents should include the
-original LICENSE and README files.</li>
-<li><b>License terms travel with the cargo:</b> some accepted licenses carry conditions
-(attribution, NC clauses, acceptable-use policies). Downstream users are bound by them; the Bay
-surfaces the license tag on every listing so nobody is surprised.</li>
-</ul>
-<h2 id="takedown">Takedown</h2>
-<p>If something is listed that shouldn't be — wrong license tag, gated content, personal data —
-email <a href="mailto:takedown@thehuggingbay.io"><b>takedown@thehuggingbay.io</b></a> or open an issue.
-Include the listing URL or infohash and the basis for removal. Non-compliant listings are removed
-fast, no drama. We are here to preserve what's freely given, not to leak what isn't.</p>
+<h2>⚓ The catalog is a torrent</h2>
+<p>The Bay's entire index — every listing, magnet, license tag, and SHA-256 manifest — is
+periodically snapshotted into a small torrent of its own. Anyone seeding the catalog carries
+the whole map. If this site ever disappears, the swarm keeps both the models <i>and the
+index to them</i>.</p>
+
+<p><b>Latest snapshot:</b> <a href="/thehuggingbay/torrent/6abb2d5b54555764485c1458aefeba8b00d6e841">hugging-bay-catalog-2026-07-23</a>
+(28 KB, Today 21:36)</p>
+<a class="magnet-box" href="magnet:?xt=urn:btih:6abb2d5b54555764485c1458aefeba8b00d6e841&amp;dn=hugging-bay-catalog-2026-07-23&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce">🧲 magnet:?xt=urn:btih:6abb2d5b54555764485c1458aefeba8b00d6e841&amp;dn=hugging-bay-catalog-2026-07-23&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce</a>
+<p>Inside: <code>catalog.json</code> (machine-readable, same shape as <a href="/thehuggingbay/api">the API</a>)
+and a README. Verify listings by re-hashing against each entry's SHA-256 manifest.</p>
+<p><a href="/thehuggingbay/search?q=hugging-bay-catalog">All previous snapshots</a> stay listed and seedable.</p>
+<p class="fine">Snapshots are CC0 — take them, mirror them, fork the Bay itself. That's the point.</p>
 </div>
 <footer>
   <nav>
