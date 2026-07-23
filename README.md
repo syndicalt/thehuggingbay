@@ -70,10 +70,15 @@ and publishes the listing to the index. Add the .torrent to any client pointed a
 
 ### Webseeds
 
-Torrents carry a webseed base of `https://thehuggingbay.io/ws/<org>/` (BEP-19). Clients
-append `<repo>/<file>`, and the Worker 302-redirects to
+HF-sourced torrents carry a webseed base of `https://thehuggingbay.io/ws/<org>/` (BEP-19).
+Clients append `<repo>/<file>`, and the Worker 302-redirects to
 `https://huggingface.co/<org>/<repo>/resolve/main/<file>` — so every torrent can draw from
 Hugging Face's CDN even with zero peers, and the swarm keeps working if HF goes away.
+
+Non-HF sources work too: torrent any local directory (`--license` required, `--source`
+recommended) and add `--webseed <url>` (repeatable) for any HTTP mirror that serves the
+files at `<url>/<torrent-name>/<file-path>` — no shim needed when the mirror's layout
+already matches BEP-19.
 
 ## Swarm stats
 

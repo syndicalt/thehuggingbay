@@ -157,9 +157,18 @@ async function cmdCreate(target, opts) {
 
   const pieces = await hashContent(files, pieceLength, totalSize);
 
-  // Webseed via the Bay's redirect shim (BEP-19 multi-file: client appends "<name>/<path>",
-  // torrent name must equal the HF repo short name for the shim to resolve).
-  const webseeds = org && repo === name ? [`${WS_BASE}/${org}/`] : [];
+  // Webseeds (BEP-19 multi-file: client appends "<name>/<path>" to a base ending in "/").
+  // HF repos get the Bay's redirect shim; --webseed adds any HTTP mirror whose directory
+  // layout matches <base>/<name>/<path>. The torrent name must match the directory the
+  // mirror serves (for the shim: the HF repo short name).
+  const extraSeeds = (opts.webseed || []).map((w) => {
+    if (!/^https?:\/\//.test(w)) throw new Error(`webseed must be an http(s) URL: ${w}`);
+    return w.endsWith('/') ? w : w + '/';
+  });
+  const webseeds = [
+    ...(org && repo === name ? [`${WS_BASE}/${org}/`] : []),
+    ...extraSeeds,
+  ];
 
   const info = {
     files: files.map((f) => ({ length: f.size, path: f.path.split('/') })),
@@ -224,6 +233,7 @@ const { positionals, values } = parseArgs({
     description: { type: 'string' },
     uploader: { type: 'string' },
     out: { type: 'string' },
+    webseed: { type: 'string', multiple: true },
     publish: { type: 'string' },
     'no-publish': { type: 'boolean' },
     'skip-download': { type: 'boolean' },
@@ -245,7 +255,10 @@ Options:
   --publish <url>      index to publish to (default: ${DEFAULT_INDEX})
   --no-publish         build the torrent but don't publish the listing
   --skip-download      HF repo already downloaded to $BAY_FLEET/<repo>
-  --out <dir>          output dir for .torrent + manifest (default: $BAY_FLEET/torrents)`);
+  --out <dir>          output dir for .torrent + manifest (default: $BAY_FLEET/torrents)
+  --webseed <url>      extra BEP-19 webseed base (repeatable); the mirror must serve files
+                       at <url>/<torrent-name>/<file-path>. HF repos get the Bay shim
+                       webseed automatically; use this for non-HF mirrors.`);
   process.exit(cmd ? 1 : 0);
 }
 cmdCreate(target, { ...values, publish: values['no-publish'] ? false : values.publish })
