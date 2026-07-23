@@ -1,0 +1,22 @@
+{
+  "name": "thehuggingbay",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-07-01",
+  "routes": [
+    { "pattern": "thehuggingbay.io", "custom_domain": true },
+    { "pattern": "www.thehuggingbay.io", "custom_domain": true }
+  ],
+  "rules": [
+    { "type": "Text", "globs": ["**/*.css"] }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "hugging-bay",
+      "database_id": "TBD_AFTER_D1_CREATE"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

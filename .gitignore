@@ -2,3 +2,6 @@ bay.db
 bay.db-wal
 bay.db-shm
 node_modules/
+worker/.wrangler/
+worker/node_modules/
+.dev.vars
