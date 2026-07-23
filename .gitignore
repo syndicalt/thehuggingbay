@@ -1,0 +1,4 @@
+bay.db
+bay.db-wal
+bay.db-shm
+node_modules/

@@ -1,0 +1,105 @@
+:root {
+  --bg: #f5f1e8;
+  --ink: #1c1a17;
+  --link: #1a3faa;
+  --rule: #c9c0ae;
+  --panel: #fdf9ef;
+  --banner: #fdf3d0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "DejaVu Sans Mono", "Menlo", "Consolas", monospace;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.page { max-width: 900px; margin: 0 auto; padding: 24px 16px 40px; }
+.page.wide { max-width: 1060px; }
+a { color: var(--link); }
+a:hover { text-decoration-thickness: 2px; }
+
+header { text-align: center; margin-bottom: 12px; }
+header .logo { text-decoration: none; color: inherit; display: block; }
+.logo-emoji { font-size: 56px; display: block; line-height: 1.1; }
+header.small .logo-emoji { font-size: 30px; display: inline; margin-right: 8px; }
+h1 {
+  font-family: "Old English Text MT", "UnifrakturMaguntia", "URW Chancery L", Georgia, serif;
+  font-size: 44px; margin: 4px 0 10px; font-weight: 600; letter-spacing: 1px;
+}
+header.small h1 { font-size: 28px; display: inline; vertical-align: middle; }
+.topnav { margin: 6px 0 14px; font-weight: 700; }
+
+form.search input[type=search] {
+  width: 100%; max-width: 560px; display: block; margin: 0 auto;
+  padding: 8px 12px; font: inherit; border: 1px solid #8a8272; border-radius: 3px;
+  background: #fff;
+}
+form.search { text-align: center; }
+.cats { margin: 12px auto; display: flex; flex-wrap: wrap; gap: 4px 14px; justify-content: center; }
+.cats label { white-space: nowrap; cursor: pointer; }
+.buttons { margin: 10px 0 4px; }
+.buttons button {
+  font: inherit; padding: 6px 16px; margin: 0 6px; cursor: pointer;
+  background: #e8e2d2; border: 1px solid #8a8272; border-radius: 3px;
+}
+.buttons button:hover { background: #ddd5c0; }
+
+.banner {
+  background: var(--banner); border: 1px solid #d8c98a; border-radius: 3px;
+  text-align: center; padding: 8px 12px; margin: 18px 0 6px; font-weight: 700;
+}
+.banner .fine { font-weight: 400; }
+
+h2 { font-size: 16px; margin: 22px 0 8px; }
+table.torrents { width: 100%; border-collapse: collapse; background: var(--panel); }
+table.torrents th, table.torrents td {
+  border: 1px solid var(--rule); padding: 5px 8px; text-align: left; vertical-align: top;
+}
+table.torrents thead th { background: #e8e2d2; font-size: 13px; }
+td.type { width: 52px; text-align: center; }
+td.num { text-align: right; white-space: nowrap; }
+td.date { white-space: nowrap; }
+td.seeds { color: #0a7a2f; font-weight: 700; }
+td.leech { color: #a03030; }
+td.empty { text-align: center; color: #777; padding: 24px; }
+.cat {
+  display: inline-block; padding: 1px 7px; border: 1px solid #999;
+  border-radius: 3px; font-size: 12px; font-weight: 700; text-decoration: none; color: #222;
+}
+.tname { font-weight: 700; }
+.sub { font-size: 12px; color: #6a6455; }
+.mag { text-decoration: none; }
+.badge { font-size: 12px; }
+.badge.unverified { color: #b02a0a; font-weight: 700; }
+.dim { color: #8a8272; font-weight: 400; font-size: 12px; }
+
+.statsbar, footer { text-align: center; }
+.statsbar { margin-top: 16px; }
+footer { margin-top: 30px; border-top: 1px solid var(--rule); padding-top: 14px; }
+footer .tagline { font-weight: 700; }
+.fine { font-size: 12px; color: #6a6455; }
+
+.detail dl { display: grid; grid-template-columns: 160px 1fr; gap: 4px 12px; background: var(--panel); border: 1px solid var(--rule); padding: 14px; }
+.detail dt { font-weight: 700; color: #6a6455; }
+.detail dd { margin: 0; overflow-wrap: anywhere; }
+.magnet-box {
+  display: block; background: #1c1a17; color: #7ce38b; padding: 10px 12px;
+  border-radius: 3px; margin: 12px 0; overflow-wrap: anywhere; font-size: 12px;
+  text-decoration: none;
+}
+.magnet-box:hover { color: #a9f0b4; }
+
+form.upload { background: var(--panel); border: 1px solid var(--rule); padding: 16px; }
+form.upload label { display: block; margin: 10px 0 2px; font-weight: 700; }
+form.upload input, form.upload select, form.upload textarea {
+  width: 100%; padding: 6px 8px; font: inherit; border: 1px solid #8a8272; border-radius: 3px; background: #fff;
+}
+form.upload button { margin-top: 14px; }
+
+.notice { background: #e2f0d9; border: 1px solid #9cc48a; padding: 10px 14px; border-radius: 3px; }
+.warn { background: #fbe3dc; border: 1px solid #d89a86; padding: 10px 14px; border-radius: 3px; }
+pre.code { background: #1c1a17; color: #e8e2d2; padding: 12px; border-radius: 3px; overflow-x: auto; font-size: 12.5px; }
+.prose { max-width: 760px; margin: 0 auto; }
+.prose h2 { margin-top: 26px; }

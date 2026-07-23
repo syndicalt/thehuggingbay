@@ -1,0 +1,15 @@
+{
+  "name": "the-hugging-bay",
+  "version": "0.1.0",
+  "description": "The Hugging Bay — a community index of torrents for openly-licensed AI models, weights, and datasets. Sailors unite.",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "reseed": "node --experimental-sqlite -e \"import('./lib/db.mjs').then(m => m.resetDb())\""
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "license": "MIT"
+}
