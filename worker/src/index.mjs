@@ -2,6 +2,7 @@
 // Rendering is shared with the Node server via ../../lib/views.mjs.
 import CSS from '../../public/style.css';
 import BANNER from '../../public/banner.webp';
+import CARD from '../../public/card.jpg';
 import { CATEGORIES, validateListing } from '../../lib/shared.mjs';
 import { esc } from '../../lib/pages.mjs';
 import * as views from '../../lib/views.mjs';
@@ -130,6 +131,8 @@ export default {
         return new Response(CSS, { headers: { 'content-type': 'text/css', 'cache-control': 'public, max-age=3600' } });
       if (path === '/banner.webp')
         return new Response(BANNER, { headers: { 'content-type': 'image/webp', 'cache-control': 'public, max-age=86400' } });
+      if (path === '/card.jpg')
+        return new Response(CARD, { headers: { 'content-type': 'image/jpeg', 'cache-control': 'public, max-age=86400' } });
 
       if (request.method === 'GET') {
         if (path === '/') return html(views.homeView({

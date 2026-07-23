@@ -14,6 +14,7 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 1337);
 const CSS = readFileSync(join(ROOT, 'public', 'style.css'));
 const BANNER = readFileSync(join(ROOT, 'public', 'banner.webp'));
+const CARD = readFileSync(join(ROOT, 'public', 'card.jpg'));
 
 getDb(); // open + seed on first run
 
@@ -63,6 +64,7 @@ const server = createServer(async (req, res) => {
   try {
     if (path === '/style.css') return send(200, CSS, 'text/css');
     if (path === '/banner.webp') return send(200, BANNER, 'image/webp');
+    if (path === '/card.jpg') return send(200, CARD, 'image/jpeg');
     if (req.method === 'GET') {
       if (path === '/') return send(200, views.homeView({
         latest: searchTorrents({ sort: 'date', limit: 15 }),
