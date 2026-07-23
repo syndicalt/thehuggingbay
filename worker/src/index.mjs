@@ -1,7 +1,7 @@
 // The Hugging Bay index on Cloudflare Workers + D1.
 // Rendering is shared with the Node server via ../../lib/views.mjs.
 import CSS from '../../public/style.css';
-import BANNER from '../../public/banner.jpg';
+import BANNER from '../../public/banner.webp';
 import { CATEGORIES, validateListing } from '../../lib/shared.mjs';
 import { esc } from '../../lib/pages.mjs';
 import * as views from '../../lib/views.mjs';
@@ -128,8 +128,8 @@ export default {
 
       if (path === '/style.css')
         return new Response(CSS, { headers: { 'content-type': 'text/css', 'cache-control': 'public, max-age=3600' } });
-      if (path === '/banner.jpg')
-        return new Response(BANNER, { headers: { 'content-type': 'image/jpeg', 'cache-control': 'public, max-age=86400' } });
+      if (path === '/banner.webp')
+        return new Response(BANNER, { headers: { 'content-type': 'image/webp', 'cache-control': 'public, max-age=86400' } });
 
       if (request.method === 'GET') {
         if (path === '/') return html(views.homeView({

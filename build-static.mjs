@@ -97,7 +97,7 @@ async function main() {
   mkdirSync(OUT, { recursive: true });
   writeFileSync(join(OUT, '.nojekyll'), '');
   cpSync(join(ROOT, 'public', 'style.css'), join(OUT, 'style.css'));
-  cpSync(join(ROOT, 'public', 'banner.jpg'), join(OUT, 'banner.jpg'));
+  cpSync(join(ROOT, 'public', 'banner.webp'), join(OUT, 'banner.webp'));
 
   const torrents = await (await fetch(`${ORIGIN}/api/torrents?limit=500`)).json();
   mkdirSync(join(OUT, 'api'), { recursive: true });

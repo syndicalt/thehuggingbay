@@ -8,7 +8,7 @@
   ],
   "rules": [
     { "type": "Text", "globs": ["**/*.css"] },
-    { "type": "Data", "globs": ["**/*.jpg"] }
+    { "type": "Data", "globs": ["**/*.webp"] }
   ],
   "d1_databases": [
     {
