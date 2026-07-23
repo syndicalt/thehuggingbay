@@ -19,6 +19,34 @@ Live index: **https://thehuggingbay.io** (Cloudflare Worker + D1)
 | `build-static.mjs` | Static export of the whole site for GitHub Pages / mirror hosting |
 | `lib/` | Shared rendering + validation used by both the Node server and the Worker |
 
+## How it works
+
+**The index never touches the files.** Listing, delisting, or losing the site entirely has no
+effect on the swarm — the Bay stores metadata only.
+
+1. **Create** — `bay-cli` reads every file in the repo and slices the combined stream into
+   fixed-size pieces (auto-tuned to the total size), SHA-1-hashing each one. The piece
+   hashes + file list form the torrent's *info dictionary*; the SHA-1 of that dictionary is
+   the **infohash**, the torrent's permanent globally-unique ID. Change one byte anywhere
+   and the infohash changes. A per-file SHA-256 manifest is computed in the same pass for
+   human-auditable verification against upstream.
+2. **List** — publishing to the index stores metadata (infohash, license, manifest, source
+   link) and renders a magnet link. This is discovery only; no bytes move.
+3. **Seed** — a *separate, physical act*: any machine holding the complete files loads the
+   `.torrent` into a client, which verifies the data against the piece hashes, then
+   **announces** to the trackers and the DHT ("I have infohash X, reach me here"). The
+   announcement — not the listing — is what makes a model available.
+4. **Download** — a leecher's client resolves the magnet's infohash via trackers/DHT, connects
+   to seeders directly, and verifies every arriving piece against the pinned hashes — nobody
+   can slip altered weights into a swarm. On completion the leecher announces too:
+   popularity creates capacity.
+5. **Webseed backstop** — torrents carry `ws=https://thehuggingbay.io/ws/<org>/`; at zero
+   peers a client fetches the files over HTTPS through the Worker's redirect to Hugging
+   Face's CDN, still piece-verified. HF is an invisible seed of last resort while it exists;
+   the swarm carries on if it doesn't.
+6. **Stats** — `bay-scrape` periodically asks the trackers how many peers they've seen per
+   infohash and pushes real counts to the index, so seed numbers reflect the actual swarm.
+
 ## Quick start (local mirror)
 
 Zero dependencies. Requires Node.js ≥ 22.5.
