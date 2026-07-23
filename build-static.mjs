@@ -28,7 +28,7 @@ async function waitForServer() {
 const rewrite = (html) => html
   .replaceAll('action="/search"', `action="${BASE}/search/"`)
   .replaceAll('formaction="/lucky"', `formaction="${BASE}/lucky/"`)
-  .replace(/(href=")\/(?!\/)/g, `$1${BASE}/`);
+  .replace(/((?:href|src)=")\/(?!\/)/g, `$1${BASE}/`);
 
 function outFile(route) {
   if (route === '/') return join(OUT, 'index.html');
@@ -97,6 +97,7 @@ async function main() {
   mkdirSync(OUT, { recursive: true });
   writeFileSync(join(OUT, '.nojekyll'), '');
   cpSync(join(ROOT, 'public', 'style.css'), join(OUT, 'style.css'));
+  cpSync(join(ROOT, 'public', 'banner.jpg'), join(OUT, 'banner.jpg'));
 
   const torrents = await (await fetch(`${ORIGIN}/api/torrents?limit=500`)).json();
   mkdirSync(join(OUT, 'api'), { recursive: true });

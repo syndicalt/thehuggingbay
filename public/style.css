@@ -23,6 +23,11 @@ a:hover { text-decoration-thickness: 2px; }
 header { text-align: center; margin-bottom: 12px; }
 header .logo { text-decoration: none; color: inherit; display: block; }
 .logo-emoji { font-size: 56px; display: block; line-height: 1.1; }
+.banner-img { width: 100%; max-width: 620px; height: auto; border-radius: 10px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
 header.small .logo-emoji { font-size: 30px; display: inline; margin-right: 8px; }
 h1 {
   font-family: "Old English Text MT", "UnifrakturMaguntia", "URW Chancery L", Georgia, serif;
