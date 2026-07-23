@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upload — The Hugging Bay</title>
+<link rel="stylesheet" href="/thehuggingbay/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤗</text></svg>">
+</head>
+<body>
+<div class="page">
+
+
+<header class="small">
+  <a class="logo" href="/thehuggingbay/"><span class="logo-emoji">🏴‍☠️🤗⛵</span>
+  <h1>The Hugging Bay</h1></a>
+  <nav class="topnav">
+    <a href="/thehuggingbay/">Search Models</a> | <a href="/thehuggingbay/browse">Browse Models</a> |
+    <a href="/thehuggingbay/recent">Recent Uploads</a> | <a href="/thehuggingbay/top100">Top 100</a>
+  </nav>
+</header>
+<h2>Upload a torrent</h2>
+<p class="warn"><b>Static demo:</b> this page is served from GitHub Pages, so uploads are
+disabled here. Clone the repo and run <code>node server.mjs</code> for the full Bay, or open a GitHub issue
+with your magnet + license + upstream link.</p>
+
+
+<p class="warn"><b>Open licenses only.</b> The artifact's license must explicitly permit redistribution.
+No gated repos, no leaked weights, no “trust me bro” licenses. Listings start as
+<b>Unverified</b> until a Captain confirms the SHA-256 manifest against the upstream release.</p>
+<form class="upload" onsubmit="alert('Static demo — run the server locally to upload.'); return false;" method="post" action="/submit">
+  <label>Name</label><input name="name" required maxlength="200" placeholder="Llama-3.1-70B-Instruct">
+  <label>Infohash (40-char hex, BTv1)</label><input name="infohash" required pattern="[a-fA-F0-9]{40}" placeholder="e.g. from your torrent client">
+  <label>Category</label><select name="category"><option value="llm">LLMs</option><option value="emb">Embeddings</option><option value="vis">Vision</option><option value="aud">Audio</option><option value="agt">Agents</option><option value="data">Datasets</option><option value="app">Applications</option><option value="meme">Memes</option></select>
+  <label>Size (bytes)</label><input name="size_bytes" type="number" required min="1">
+  <label>License</label><select name="license"><option>Apache-2.0</option><option>MIT</option><option>Modified-MIT</option><option>BSD-3-Clause</option><option>GPL-3.0</option><option>AGPL-3.0</option><option>CC0-1.0</option><option>CC-BY-4.0</option><option>CC-BY-SA-4.0</option><option>CC-BY-NC-4.0</option><option>ODC-By-1.0</option><option>OpenRAIL</option><option>OpenRAIL++-M</option><option>Llama-3.1-Community</option><option>Gemma</option><option>Qwen-License</option><option>Other-Open</option></select>
+  <label>Upstream source URL</label><input name="source_url" type="url" placeholder="https://huggingface.co/...">
+  <label>Your sailor name</label><input name="uploader" required maxlength="40" placeholder="CaptainHug">
+  <label>Description</label><textarea name="description" rows="4" maxlength="2000"></textarea>
+  <div class="buttons"><button type="submit">Hoist the flag 🏴‍☠️</button></div>
+</form>
+<footer>
+  <nav>
+    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/api">API</a> |
+    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a>
+  </nav>
+  <p class="tagline">🤗 Hug more. Gatekeep less. 🏴‍☠️</p>
+  <p class="fine">The Hugging Bay indexes magnet links for openly-licensed AI artifacts only. No files are hosted here.</p>
+</footer>
+</div>
+</body>
+</html>

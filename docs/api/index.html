@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>API — The Hugging Bay</title>
+<link rel="stylesheet" href="/thehuggingbay/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤗</text></svg>">
+</head>
+<body>
+<div class="page">
+
+
+<header class="small">
+  <a class="logo" href="/thehuggingbay/"><span class="logo-emoji">🏴‍☠️🤗⛵</span>
+  <h1>The Hugging Bay</h1></a>
+  <nav class="topnav">
+    <a href="/thehuggingbay/">Search Models</a> | <a href="/thehuggingbay/browse">Browse Models</a> |
+    <a href="/thehuggingbay/recent">Recent Uploads</a> | <a href="/thehuggingbay/top100">Top 100</a>
+  </nav>
+</header>
+<div class="prose">
+<h2>API</h2>
+<p>Everything on the Bay is available as JSON. No keys, no rate limits (yet). Intended for the
+torrent-creation CLI, seedbox automation, and mirrors.</p>
+<pre class="code">GET /api/torrents?q=llama&amp;cat=llm&amp;sort=seeds&amp;limit=50
+GET /api/torrent/&lt;infohash&gt;
+GET /api/stats
+POST /api/torrents        (same fields as the upload form, JSON body)</pre>
+<p>Every torrent object includes <code>magnet</code>, <code>infohash</code>, <code>license</code>,
+<code>source_url</code>, <code>webseeds</code>, and <code>verified</code> (0 = unverified,
+1 = community, 2 = captain).</p>
+</div>
+<footer>
+  <nav>
+    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/api">API</a> |
+    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a>
+  </nav>
+  <p class="tagline">🤗 Hug more. Gatekeep less. 🏴‍☠️</p>
+  <p class="fine">The Hugging Bay indexes magnet links for openly-licensed AI artifacts only. No files are hosted here.</p>
+</footer>
+</div>
+</body>
+</html>

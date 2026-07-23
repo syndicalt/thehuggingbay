@@ -1,0 +1,458 @@
+[
+  {
+    "infohash": "e9b58075dac55fc5b272380b1b91fbbacdafadbe",
+    "name": "gpt-oss-120b",
+    "category": "llm",
+    "size_bytes": 70115341107,
+    "size": "65.3 GB",
+    "seeds": 2210,
+    "leechers": 340,
+    "uploader": "CaptainHug",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-20T16:29:16.242Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/openai/gpt-oss-120b",
+    "description": "MXFP4 release of gpt-oss-120b, fits a single 80 GB GPU.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/openai/gpt-oss-120b/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:e9b58075dac55fc5b272380b1b91fbbacdafadbe&dn=gpt-oss-120b&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fopenai%2Fgpt-oss-120b%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "9a7cd3a0399e0d76c1969ae93699f51b27e75ac9",
+    "name": "DeepSeek-R1-0528",
+    "category": "llm",
+    "size_bytes": 738734374912,
+    "size": "688.0 GB",
+    "seeds": 1834,
+    "leechers": 412,
+    "uploader": "SeaLLM",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-21T16:29:16.231Z",
+    "license": "MIT",
+    "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+    "description": "Full FP8 weights of the DeepSeek-R1-0528 reasoning model. Multi-file layout mirrors the upstream HF repo.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:9a7cd3a0399e0d76c1969ae93699f51b27e75ac9&dn=DeepSeek-R1-0528&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdeepseek-ai%2FDeepSeek-R1-0528%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "c0675a16e562cb15e0d2b0ec004bd4c7f6f212ae",
+    "name": "stable-diffusion-xl-base-1.0",
+    "category": "vis",
+    "size_bytes": 14925011354,
+    "size": "13.9 GB",
+    "seeds": 1450,
+    "leechers": 90,
+    "uploader": "UI-Corsair",
+    "uploader_rank": "Sailor",
+    "uploaded_at": "2026-06-23T16:29:16.276Z",
+    "license": "OpenRAIL++-M",
+    "source_url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+    "description": "The classic. Base UNet, both text encoders, VAE.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:c0675a16e562cb15e0d2b0ec004bd4c7f6f212ae&dn=stable-diffusion-xl-base-1.0&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fstabilityai%2Fstable-diffusion-xl-base-1.0%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "cff3dc20d1e1361789a334c91ca475a6a8ce7e0c",
+    "name": "whisper-large-v3",
+    "category": "aud",
+    "size_bytes": 3328599654,
+    "size": "3.1 GB",
+    "seeds": 1320,
+    "leechers": 48,
+    "uploader": "CaptainHug",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-03T16:29:16.280Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/openai/whisper-large-v3",
+    "description": "Speech recognition workhorse, safetensors + original OpenAI checkpoint.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/openai/whisper-large-v3/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:cff3dc20d1e1361789a334c91ca475a6a8ce7e0c&dn=whisper-large-v3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fopenai%2Fwhisper-large-v3%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "526753f1c75f1aa87779f4bc0da3a3167919cd6a",
+    "name": "Llama-3.1-70B-Instruct",
+    "category": "llm",
+    "size_bytes": 141304424038,
+    "size": "131.6 GB",
+    "seeds": 1245,
+    "leechers": 178,
+    "uploader": "CaptainHug",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-22T16:29:16.235Z",
+    "license": "Llama-3.1-Community",
+    "source_url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+    "description": "BF16 safetensors, tokenizer, and config. Redistribution permitted under the Llama 3.1 Community License with attribution.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:526753f1c75f1aa87779f4bc0da3a3167919cd6a&dn=Llama-3.1-70B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmeta-llama%2FLlama-3.1-70B-Instruct%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "01f350b8eee6cf695413051676ad9bb2ccef6459",
+    "name": "FLUX.1-schnell",
+    "category": "vis",
+    "size_bytes": 25555055411,
+    "size": "23.8 GB",
+    "seeds": 1105,
+    "leechers": 214,
+    "uploader": "UI-Corsair",
+    "uploader_rank": "Sailor",
+    "uploaded_at": "2026-07-21T16:29:16.270Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+    "description": "Fast distilled text-to-image transformer, full pipeline weights.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:01f350b8eee6cf695413051676ad9bb2ccef6459&dn=FLUX.1-schnell&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fblack-forest-labs%2FFLUX.1-schnell%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "67f3af31b0950fe7148a6a268a3ea96001e9390a",
+    "name": "Qwen3-235B-A22B-Instruct",
+    "category": "llm",
+    "size_bytes": 471480034918,
+    "size": "439.1 GB",
+    "seeds": 967,
+    "leechers": 203,
+    "uploader": "SeaLLM",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-19T16:29:16.238Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
+    "description": "Mixture-of-experts flagship, BF16 shards. Webseeds point back at the upstream repo.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/Qwen/Qwen3-235B-A22B/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:67f3af31b0950fe7148a6a268a3ea96001e9390a&dn=Qwen3-235B-A22B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen3-235B-A22B%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "4cba1ad159ecc0224750a5ea1c3edef33afb56e6",
+    "name": "nomic-embed-text-v1.5",
+    "category": "emb",
+    "size_bytes": 573571072,
+    "size": "547 MB",
+    "seeds": 921,
+    "leechers": 25,
+    "uploader": "VectorJack",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-08T16:29:16.266Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+    "description": "Long-context text embeddings with Matryoshka dimensions.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:4cba1ad159ecc0224750a5ea1c3edef33afb56e6&dn=nomic-embed-text-v1.5&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fnomic-ai%2Fnomic-embed-text-v1.5%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "0a81ac80a99edf60c372f7c4d2506b6943175482",
+    "name": "Mistral-Small-3.2-24B-Instruct",
+    "category": "llm",
+    "size_bytes": 50573239910,
+    "size": "47.1 GB",
+    "seeds": 856,
+    "leechers": 102,
+    "uploader": "CaptainHug",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-18T16:29:16.252Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "description": "BF16 safetensors plus Tekken tokenizer.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:0a81ac80a99edf60c372f7c4d2506b6943175482&dn=Mistral-Small-3.2-24B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmistralai%2FMistral-Small-3.2-24B-Instruct-2506%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "b5d96d3ac7e8bb97b3d64ae23ef4b46790277b21",
+    "name": "bge-m3",
+    "category": "emb",
+    "size_bytes": 2469606195,
+    "size": "2.3 GB",
+    "seeds": 780,
+    "leechers": 39,
+    "uploader": "VectorJack",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-11T16:29:16.263Z",
+    "license": "MIT",
+    "source_url": "https://huggingface.co/BAAI/bge-m3",
+    "description": "Dense + sparse + multi-vector retrieval in one checkpoint.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/BAAI/bge-m3/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:b5d96d3ac7e8bb97b3d64ae23ef4b46790277b21&dn=bge-m3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FBAAI%2Fbge-m3%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "728bbd36f2e1c836673af3d9dcd74c69913d5ac6",
+    "name": "Phi-4",
+    "category": "llm",
+    "size_bytes": 31460635443,
+    "size": "29.3 GB",
+    "seeds": 634,
+    "leechers": 71,
+    "uploader": "UI-Corsair",
+    "uploader_rank": "Sailor",
+    "uploaded_at": "2026-07-14T16:29:16.256Z",
+    "license": "MIT",
+    "source_url": "https://huggingface.co/microsoft/phi-4",
+    "description": "14B dense model, MIT-licensed, great laptop-class daily driver.",
+    "verified": 1,
+    "webseeds": [
+      "https://huggingface.co/microsoft/phi-4/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:728bbd36f2e1c836673af3d9dcd74c69913d5ac6&dn=Phi-4&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmicrosoft%2Fphi-4%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "e1245e07b38876da68866264621b684540bb63af",
+    "name": "Kokoro-82M",
+    "category": "aud",
+    "size_bytes": 342884352,
+    "size": "327 MB",
+    "seeds": 610,
+    "leechers": 22,
+    "uploader": "UI-Corsair",
+    "uploader_rank": "Sailor",
+    "uploaded_at": "2026-07-12T16:29:16.283Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "description": "Tiny high-quality TTS. Fits on anything.",
+    "verified": 1,
+    "webseeds": [
+      "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:e1245e07b38876da68866264621b684540bb63af&dn=Kokoro-82M&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fhexgrad%2FKokoro-82M%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "95f9034146c88da599958c22f3ceff91861a0ea8",
+    "name": "Qwen3-Embedding-8B",
+    "category": "emb",
+    "size_bytes": 17287243366,
+    "size": "16.1 GB",
+    "seeds": 512,
+    "leechers": 44,
+    "uploader": "VectorJack",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-20T16:29:16.259Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+    "description": "Top-of-leaderboard multilingual embedding model.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/Qwen/Qwen3-Embedding-8B/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:95f9034146c88da599958c22f3ceff91861a0ea8&dn=Qwen3-Embedding-8B&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen3-Embedding-8B%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "846f6a3d5991bda7b211ed84930f187600771c8d",
+    "name": "comfyui-portable-linux",
+    "category": "app",
+    "size_bytes": 2040109466,
+    "size": "1.9 GB",
+    "seeds": 505,
+    "leechers": 27,
+    "uploader": "UI-Corsair",
+    "uploader_rank": "Sailor",
+    "uploaded_at": "2026-07-17T16:29:16.305Z",
+    "license": "GPL-3.0",
+    "source_url": "https://github.com/comfyanonymous/ComfyUI",
+    "description": "Portable ComfyUI bundle with common custom nodes preinstalled.",
+    "verified": 1,
+    "webseeds": [],
+    "magnet": "magnet:?xt=urn:btih:846f6a3d5991bda7b211ed84930f187600771c8d&dn=comfyui-portable-linux&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
+  },
+  {
+    "infohash": "557b8d81d70f4d1fc87c2d120bb0a212cc4a09aa",
+    "name": "GLM-4.5-Air",
+    "category": "llm",
+    "size_bytes": 228707008512,
+    "size": "213.0 GB",
+    "seeds": 421,
+    "leechers": 88,
+    "uploader": "SeaLLM",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-15T16:29:16.249Z",
+    "license": "MIT",
+    "source_url": "https://huggingface.co/zai-org/GLM-4.5-Air",
+    "description": "BF16 weights of the 106B GLM-4.5-Air.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/zai-org/GLM-4.5-Air/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:557b8d81d70f4d1fc87c2d120bb0a212cc4a09aa&dn=GLM-4.5-Air&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fzai-org%2FGLM-4.5-Air%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "d78110ba64b08682f3c41d55a2eb6de97a777681",
+    "name": "Qwen3-Coder-30B-A3B-Instruct",
+    "category": "agt",
+    "size_bytes": 65605625446,
+    "size": "61.1 GB",
+    "seeds": 402,
+    "leechers": 77,
+    "uploader": "SeaLLM",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-19T16:29:16.290Z",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "description": "Agentic coding MoE — strong tool-use and repo-scale editing.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:d78110ba64b08682f3c41d55a2eb6de97a777681&dn=Qwen3-Coder-30B-A3B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen3-Coder-30B-A3B-Instruct%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "390c5a7bbd40f5f45b3d6819dfed5e66ee2cc221",
+    "name": "hugging-bay-sticker-pack",
+    "category": "meme",
+    "size_bytes": 12582912,
+    "size": "12 MB",
+    "seeds": 333,
+    "leechers": 4,
+    "uploader": "CaptainHug",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-22T16:29:16.308Z",
+    "license": "CC0-1.0",
+    "source_url": "https://thehuggingbay.example/stickers",
+    "description": "The official 🤗🏴‍☠️ sticker pack. Hug more. Gatekeep less.",
+    "verified": 2,
+    "webseeds": [],
+    "magnet": "magnet:?xt=urn:btih:390c5a7bbd40f5f45b3d6819dfed5e66ee2cc221&dn=hugging-bay-sticker-pack&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce"
+  },
+  {
+    "infohash": "78a58d5ed09bd0490a32b9da0f1af7114b8cad8f",
+    "name": "Qwen2.5-VL-72B-Instruct",
+    "category": "vis",
+    "size_bytes": 147317378253,
+    "size": "137.2 GB",
+    "seeds": 289,
+    "leechers": 67,
+    "uploader": "SeaLLM",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-16T16:29:16.273Z",
+    "license": "Qwen-License",
+    "source_url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+    "description": "Vision-language flagship: grounding, video understanding, document parsing.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:78a58d5ed09bd0490a32b9da0f1af7114b8cad8f&dn=Qwen2.5-VL-72B-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2FQwen%2FQwen2.5-VL-72B-Instruct%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "18206eec1381b518a31bb76e54e91444c8deaa88",
+    "name": "OpenOrca",
+    "category": "data",
+    "size_bytes": 6871947674,
+    "size": "6.4 GB",
+    "seeds": 240,
+    "leechers": 12,
+    "uploader": "DataBuccaneer",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-06-13T16:29:16.298Z",
+    "license": "MIT",
+    "source_url": "https://huggingface.co/datasets/Open-Orca/OpenOrca",
+    "description": "Classic instruction-tuning dataset, parquet.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/datasets/Open-Orca/OpenOrca/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:18206eec1381b518a31bb76e54e91444c8deaa88&dn=OpenOrca&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdatasets%2FOpen-Orca%2FOpenOrca%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "7c0b63ea93cf71b0b06e61c9e1a88518485fcf44",
+    "name": "OpenHands-LM-32B",
+    "category": "agt",
+    "size_bytes": 69471096013,
+    "size": "64.7 GB",
+    "seeds": 187,
+    "leechers": 34,
+    "uploader": "DataBuccaneer",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-13T16:29:16.286Z",
+    "license": "MIT",
+    "source_url": "https://huggingface.co/all-hands/openhands-lm-32b-v0.1",
+    "description": "Coding-agent tuned 32B for autonomous software tasks.",
+    "verified": 1,
+    "webseeds": [
+      "https://huggingface.co/all-hands/openhands-lm-32b-v0.1/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:7c0b63ea93cf71b0b06e61c9e1a88518485fcf44&dn=OpenHands-LM-32B&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fall-hands%2Fopenhands-lm-32b-v0.1%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "eeb95f69813a6fc767717023f8168ba495e63a45",
+    "name": "Kimi-K2-Instruct",
+    "category": "llm",
+    "size_bytes": 1132496976609,
+    "size": "1.03 TB",
+    "seeds": 148,
+    "leechers": 96,
+    "uploader": "PetabytePete",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-17T16:29:16.246Z",
+    "license": "Modified-MIT",
+    "source_url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+    "description": "1T-parameter MoE, FP8 block format. The biggest ship in the harbor — seeders with real bandwidth wanted.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/moonshotai/Kimi-K2-Instruct/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:eeb95f69813a6fc767717023f8168ba495e63a45&dn=Kimi-K2-Instruct&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fmoonshotai%2FKimi-K2-Instruct%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "f671dc4ffbc6f5b80ede91c58cf067c4d3e23cfa",
+    "name": "fineweb-edu-sample-100BT",
+    "category": "data",
+    "size_bytes": 248463858074,
+    "size": "231.4 GB",
+    "seeds": 96,
+    "leechers": 41,
+    "uploader": "DataBuccaneer",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-09T16:29:16.294Z",
+    "license": "ODC-By-1.0",
+    "source_url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+    "description": "100B-token educational-quality web sample. Parquet shards, original layout.",
+    "verified": 2,
+    "webseeds": [
+      "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:f671dc4ffbc6f5b80ede91c58cf067c4d3e23cfa&dn=fineweb-edu-sample-100BT&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdatasets%2FHuggingFaceFW%2Ffineweb-edu%2Fresolve%2Fmain%2F"
+  },
+  {
+    "infohash": "86b9560153cbb31df197b26f59bce50300ce4a7d",
+    "name": "smollm-corpus",
+    "category": "data",
+    "size_bytes": 1209462790554,
+    "size": "1.10 TB",
+    "seeds": 31,
+    "leechers": 18,
+    "uploader": "PetabytePete",
+    "uploader_rank": "First Mate",
+    "uploaded_at": "2026-07-01T16:29:16.301Z",
+    "license": "ODC-By-1.0",
+    "source_url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus",
+    "description": "Full pretraining corpus for small models. Under-seeded — sailors needed.",
+    "verified": 1,
+    "webseeds": [
+      "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/main/"
+    ],
+    "magnet": "magnet:?xt=urn:btih:86b9560153cbb31df197b26f59bce50300ce4a7d&dn=smollm-corpus&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fhuggingface.co%2Fdatasets%2FHuggingFaceTB%2Fsmollm-corpus%2Fresolve%2Fmain%2F"
+  }
+]

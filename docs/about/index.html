@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — The Hugging Bay</title>
+<link rel="stylesheet" href="/thehuggingbay/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤗</text></svg>">
+</head>
+<body>
+<div class="page">
+
+
+<header class="small">
+  <a class="logo" href="/thehuggingbay/"><span class="logo-emoji">🏴‍☠️🤗⛵</span>
+  <h1>The Hugging Bay</h1></a>
+  <nav class="topnav">
+    <a href="/thehuggingbay/">Search Models</a> | <a href="/thehuggingbay/browse">Browse Models</a> |
+    <a href="/thehuggingbay/recent">Recent Uploads</a> | <a href="/thehuggingbay/top100">Top 100</a>
+  </nav>
+</header>
+<div class="prose">
+<h2>What is this?</h2>
+<p>The Hugging Bay is a community-run <b>index</b> of BitTorrent magnet links for AI models, weights,
+and datasets whose licenses explicitly permit redistribution. Centralized hubs are single points of
+failure — policy pressure, geo-blocking, bandwidth caps. A swarm is not. The Bay never hosts files;
+it catalogs verified magnets and the fleet does the rest.</p>
+<h2 id="sailor">How to become a Sailor</h2>
+<ol>
+<li><b>Get a torrent client</b> that handles large multi-file torrents well (qBittorrent, Transmission, rtorrent).</li>
+<li><b>Pick ships from the <a href="/thehuggingbay/fleet">under-seeded list</a></b> — sorted so the most at-risk models surface first.</li>
+<li><b>Seed long-term.</b> Ratio doesn't matter here; uptime does. A NAS in a closet beats a fast box that vanishes.</li>
+<li><b>Verify what you seed:</b> compare SHA-256 checksums against the upstream release linked on each listing.</li>
+<li>Optionally <a href="/thehuggingbay/submit">upload</a> torrents for models we're missing — open licenses only.</li>
+</ol>
+<h2>Crew ranks</h2>
+<p><b>Sailor</b> — seeds and contributes. <b>First Mate</b> — trusted uploader with a track record of
+clean manifests. <b>Captain</b> — verifies listings: re-hashes content against upstream checksums and
+signs off. Captain-verified listings carry the 🏴‍☠️✔ badge.</p>
+<h2>Principles</h2>
+<ul>
+<li><b>Index only, never host.</b></li>
+<li><b>Verification first.</b> Every listing links its upstream source; SHA-256 manifests are checked before the badge.</li>
+<li><b>Open licenses only.</b> If the license doesn't permit redistribution, it doesn't sail. See <a href="/thehuggingbay/policy">policy</a>.</li>
+</ul>
+<p class="tagline">Sailors unite. ⛵🤗</p>
+</div>
+<footer>
+  <nav>
+    <a href="/thehuggingbay/submit">Upload</a> | <a href="/thehuggingbay/fleet">Fleet Status</a> | <a href="/thehuggingbay/api">API</a> |
+    <a href="/thehuggingbay/policy">Policy</a> | <a href="/thehuggingbay/policy#takedown">Takedown</a> | <a href="/thehuggingbay/about">About</a>
+  </nav>
+  <p class="tagline">🤗 Hug more. Gatekeep less. 🏴‍☠️</p>
+  <p class="fine">The Hugging Bay indexes magnet links for openly-licensed AI artifacts only. No files are hosted here.</p>
+</footer>
+</div>
+</body>
+</html>

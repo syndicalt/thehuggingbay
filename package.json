@@ -6,6 +6,7 @@
   "main": "server.mjs",
   "scripts": {
     "start": "node server.mjs",
+    "build:static": "node build-static.mjs",
     "reseed": "node --experimental-sqlite -e \"import('./lib/db.mjs').then(m => m.resetDb())\""
   },
   "engines": {
