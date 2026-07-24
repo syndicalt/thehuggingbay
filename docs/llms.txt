@@ -13,6 +13,7 @@ JSON. No keys required. Rate limits: 120 API reads/min and 10 writes/min per IP.
 - https://thehuggingbay.io/api/torrent/{infohash} : one listing
 - https://thehuggingbay.io/api/stats : index totals
 - https://thehuggingbay.io/api/catalog : latest catalog-torrent snapshot (the entire index as a magnet link)
+- https://thehuggingbay.io/torrent/{infohash}.torrent : the .torrent file — carries webseeds, downloads without any peer
 - https://thehuggingbay.io/openapi.json : OpenAPI 3.1 description of the above
 - POST https://thehuggingbay.io/api/torrents : submit a listing (open licenses only; starts Unverified)
 

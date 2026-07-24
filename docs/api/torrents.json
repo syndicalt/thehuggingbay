@@ -5,7 +5,7 @@
     "category": "emb",
     "size_bytes": 2215241835,
     "size": "2.1 GB",
-    "seeds": 3,
+    "seeds": 2,
     "leechers": 0,
     "uploader": "syndicalt",
     "uploader_rank": "Captain",
@@ -116,6 +116,39 @@
     ],
     "magnet": "magnet:?xt=urn:btih:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b&dn=nomic-embed-text-v1.5&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fnomic-ai%2F",
     "torrent_url": "https://thehuggingbay.io/torrent/4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b.torrent"
+  },
+  {
+    "infohash": "ac53b114e6e64f2f868483d9bda275e9907142ff",
+    "name": "hugging-bay-catalog-2026-07-24",
+    "category": "data",
+    "size_bytes": 30704,
+    "size": "30 KB",
+    "seeds": 1,
+    "leechers": 0,
+    "uploader": "the-bay-itself",
+    "uploader_rank": "Sailor",
+    "uploaded_at": "2026-07-24 05:14:18",
+    "license": "CC0-1.0",
+    "source_url": "https://thehuggingbay.io/catalog",
+    "description": "Full index snapshot 2026-07-24: 5 listings. fingerprint:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b,61f17a1742723b1e91263ed1c859d12f33b14ce3,de23e74caeb06e4c85801ec4933770e296479575,ea150528ee00b941ac25cf6c48898ff36e266695",
+    "verified": 0,
+    "webseeds": [
+      "https://thehuggingbay.io/ws/_catalog/"
+    ],
+    "files": [
+      {
+        "path": "catalog.json",
+        "size": 30082,
+        "sha256": "c6409d08e859d35b4dc70ab9472023126747d8334b89ff950f8bb59034440ed8"
+      },
+      {
+        "path": "README.md",
+        "size": 622,
+        "sha256": "bb6f3c71ab9441394e923ab4db6c30ab76ccb0972d82a2946cdd5fe01dc70fa2"
+      }
+    ],
+    "magnet": "magnet:?xt=urn:btih:ac53b114e6e64f2f868483d9bda275e9907142ff&dn=hugging-bay-catalog-2026-07-24&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2F_catalog%2F",
+    "torrent_url": "https://thehuggingbay.io/torrent/ac53b114e6e64f2f868483d9bda275e9907142ff.torrent"
   },
   {
     "infohash": "ea150528ee00b941ac25cf6c48898ff36e266695",
@@ -410,7 +443,7 @@
     "size_bytes": 363321844,
     "size": "346 MB",
     "seeds": 1,
-    "leechers": 1,
+    "leechers": 0,
     "uploader": "syndicalt",
     "uploader_rank": "Captain",
     "uploaded_at": "2026-07-23 18:56:22",
@@ -780,38 +813,5 @@
     ],
     "magnet": "magnet:?xt=urn:btih:61f17a1742723b1e91263ed1c859d12f33b14ce3&dn=Kokoro-82M&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fhexgrad%2F",
     "torrent_url": "https://thehuggingbay.io/torrent/61f17a1742723b1e91263ed1c859d12f33b14ce3.torrent"
-  },
-  {
-    "infohash": "ac53b114e6e64f2f868483d9bda275e9907142ff",
-    "name": "hugging-bay-catalog-2026-07-24",
-    "category": "data",
-    "size_bytes": 30704,
-    "size": "30 KB",
-    "seeds": 0,
-    "leechers": 0,
-    "uploader": "the-bay-itself",
-    "uploader_rank": "Sailor",
-    "uploaded_at": "2026-07-24 05:14:18",
-    "license": "CC0-1.0",
-    "source_url": "https://thehuggingbay.io/catalog",
-    "description": "Full index snapshot 2026-07-24: 5 listings. fingerprint:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b,61f17a1742723b1e91263ed1c859d12f33b14ce3,de23e74caeb06e4c85801ec4933770e296479575,ea150528ee00b941ac25cf6c48898ff36e266695",
-    "verified": 0,
-    "webseeds": [
-      "https://thehuggingbay.io/ws/_catalog/"
-    ],
-    "files": [
-      {
-        "path": "catalog.json",
-        "size": 30082,
-        "sha256": "c6409d08e859d35b4dc70ab9472023126747d8334b89ff950f8bb59034440ed8"
-      },
-      {
-        "path": "README.md",
-        "size": 622,
-        "sha256": "bb6f3c71ab9441394e923ab4db6c30ab76ccb0972d82a2946cdd5fe01dc70fa2"
-      }
-    ],
-    "magnet": "magnet:?xt=urn:btih:ac53b114e6e64f2f868483d9bda275e9907142ff&dn=hugging-bay-catalog-2026-07-24&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2F_catalog%2F",
-    "torrent_url": "https://thehuggingbay.io/torrent/ac53b114e6e64f2f868483d9bda275e9907142ff.torrent"
   }
 ]
