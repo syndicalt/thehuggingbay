@@ -61,14 +61,38 @@ Seed this torrent and you carry the whole map. If the site is gone, the swarm re
 This snapshot is CC0 — mirror it, fork it, rehost it. Sailors unite. ⛵🤗
 `);
 
+// The catalog isn't HF-backed, so give it a webseed served from the Worker's blob store.
+// Client appends "<torrent-name>/<file>" to this base (BEP-19).
+const WS_CATALOG = `${INDEX}/ws/_catalog/`;
+
 // Create + publish via bay-cli (dir name == torrent name, so seeding rechecks cleanly).
 const r = spawnSync('node', [join(ROOT, 'bay-cli.mjs'), 'create', dir,
   '--license', 'CC0-1.0', '--category', 'data',
   '--source', `${INDEX}/catalog`,
+  '--webseed', WS_CATALOG,
   '--uploader', process.env.BAY_UPLOADER || 'the-bay-itself',
   '--description', `Full index snapshot ${date}: ${torrents.length} listings. fingerprint:${fingerprint}`,
 ], { stdio: ['ignore', 'inherit', 'inherit'] });
 if (r.status !== 0) process.exit(r.status);
+
+// Upload the catalog files to the Worker's blob store so the webseed can serve them.
+const TOKEN = process.env.BAY_SCRAPE_TOKEN;
+if (TOKEN) {
+  for (const [file, type] of [['catalog.json', 'application/json'], ['README.md', 'text/markdown']]) {
+    const res = await fetch(`${INDEX}/api/blob`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${TOKEN}` },
+      body: JSON.stringify({
+        path: `${name}/${file}`,
+        content_b64: readFileSync(join(dir, file)).toString('base64'),
+        content_type: type,
+      }),
+    });
+    console.log(`blob ${name}/${file}: ${res.status}`);
+  }
+} else {
+  console.warn('BAY_SCRAPE_TOKEN not set — catalog webseed blobs NOT uploaded (peer-only until fixed)');
+}
 
 // Seed it.
 const torrentPath = join(FLEET, 'torrents', `${name}.torrent`);

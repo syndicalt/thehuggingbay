@@ -120,6 +120,12 @@ async function main() {
   await save('/browse');
   for (const c of cats) await save(`/browse/${c}`);
   for (const t of torrents) await save(`/torrent/${t.infohash}`);
+  // Export .torrent files so mirrors serve real downloads (webseeds are absolute to the primary).
+  mkdirSync(join(OUT, 'torrent'), { recursive: true });
+  for (const t of torrents.filter((t) => t.torrent_url)) {
+    const res = await fetch(`${ORIGIN}/torrent/${t.infohash}.torrent`);
+    if (res.ok) writeFileSync(join(OUT, 'torrent', `${t.infohash}.torrent`), Buffer.from(await res.arrayBuffer()));
+  }
   await save('/fleet');
   await save('/about');
   await save('/policy');

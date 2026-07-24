@@ -15,8 +15,13 @@ const SORTS = {
   name: 't.name COLLATE NOCASE ASC',
 };
 
+// Excludes torrent_b64 (the blob) to keep list queries lean; exposes a boolean flag instead.
 const BASE_SELECT = `
-  SELECT t.*, u.name AS uploader, u.rank AS uploader_rank
+  SELECT t.id, t.infohash, t.name, t.category, t.size_bytes, t.seeds, t.leechers,
+         t.uploader_id, t.uploaded_at, t.license, t.source_url, t.description,
+         t.verified, t.files_json, t.webseeds_json,
+         (t.torrent_b64 IS NOT NULL) AS has_torrent,
+         u.name AS uploader, u.rank AS uploader_rank
   FROM torrents t LEFT JOIN uploaders u ON u.id = t.uploader_id
 `;
 
@@ -73,11 +78,11 @@ async function insertTorrent(db, f) {
   const u = await db.prepare('SELECT id FROM uploaders WHERE name = ?').bind(f.uploader).first();
   await db.prepare(`
     INSERT INTO torrents (infohash, name, category, size_bytes, uploader_id,
-      license, source_url, description, verified, files_json, webseeds_json)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?)
+      license, source_url, description, verified, files_json, webseeds_json, torrent_b64)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, ?, ?, ?)
   `).bind(
     f.infohash, f.name, f.category, Math.round(f.size_bytes), u.id,
-    f.license, f.source_url, f.description, f.files_json, f.webseeds_json,
+    f.license, f.source_url, f.description, f.files_json, f.webseeds_json, f.torrent_b64,
   ).run();
 }
 
@@ -94,6 +99,7 @@ async function handleSubmit(db, form) {
     description: form.get('description') || null,
     files_json: form.get('files_json') || null,
     webseeds_json: form.get('webseeds_json') || null,
+    torrent_b64: form.get('torrent_b64') || null,
   };
   const err = validateListing(f);
   if (err) return { page: views.submitView('', esc(err)) };
@@ -135,12 +141,49 @@ export default {
       // ending in "/". HF resolve URLs need "/resolve/main/" between repo and file, so
       // torrents carry ws=https://thehuggingbay.io/ws/<org>/ and we redirect:
       //   /ws/<org>/<repo>/<file...> -> huggingface.co/<org>/<repo>/resolve/main/<file...>
+      // Catalog webseed: files served from D1 (the catalog is not HF-backed).
+      // Honors HTTP Range (BEP-19 clients fetch pieces via ranged GETs).
+      if (path.startsWith('/ws/_catalog/')) {
+        const blobPath = decodeURIComponent(path.slice('/ws/_catalog/'.length));
+        const row = await db.prepare('SELECT content_b64, content_type FROM blobs WHERE path = ?').bind(blobPath).first();
+        if (!row) return new Response('not found', { status: 404 });
+        const bytes = Uint8Array.from(atob(row.content_b64), (c) => c.charCodeAt(0));
+        const headers = {
+          'content-type': row.content_type,
+          'accept-ranges': 'bytes',
+          'cache-control': 'public, max-age=3600',
+        };
+        const range = request.headers.get('range');
+        const m = range && /^bytes=(\d*)-(\d*)$/.exec(range.trim());
+        if (m && (m[1] || m[2])) {
+          const total = bytes.length;
+          let start = m[1] ? Number(m[1]) : total - Number(m[2]);
+          let end = m[1] ? (m[2] ? Number(m[2]) : total - 1) : total - 1;
+          if (start > end || start >= total)
+            return new Response('range not satisfiable', { status: 416, headers: { 'content-range': `bytes */${total}` } });
+          end = Math.min(end, total - 1);
+          return new Response(bytes.subarray(start, end + 1), {
+            status: 206,
+            headers: { ...headers, 'content-range': `bytes ${start}-${end}/${total}`, 'content-length': String(end - start + 1) },
+          });
+        }
+        return new Response(bytes, { headers });
+      }
       if (path.startsWith('/ws/')) {
         const [org, repo, ...file] = path.slice(4).split('/');
         if (!org || !repo || !file.length) return new Response('bad webseed path', { status: 400 });
         return Response.redirect(
           `https://huggingface.co/${org}/${repo}/resolve/main/${file.join('/')}`, 302,
         );
+      }
+
+      // Downloadable .torrent (contains metadata + webseeds — bootstraps without any peer).
+      if (path.startsWith('/torrent/') && path.endsWith('.torrent')) {
+        const row = await db.prepare('SELECT torrent_b64 FROM torrents WHERE infohash = ?')
+          .bind(path.slice(9, -8).toLowerCase()).first();
+        if (!row?.torrent_b64) return new Response('no .torrent file stored for this listing', { status: 404 });
+        const bytes = Uint8Array.from(atob(row.torrent_b64), (c) => c.charCodeAt(0));
+        return new Response(bytes, { headers: { 'content-type': 'application/x-bittorrent', 'content-disposition': 'attachment' } });
       }
 
       const text = (body, type) => new Response(body, { headers: { 'content-type': type, 'cache-control': 'public, max-age=3600' } });
@@ -216,6 +259,18 @@ export default {
           const t = await getTorrent(db, path.slice(13).toLowerCase());
           return t ? json(views.torrentJson(t)) : json({ error: 'not found' }, 404);
         }
+      }
+
+      if (request.method === 'POST' && path === '/api/blob') {
+        const auth = request.headers.get('authorization') || '';
+        if (!env.SCRAPE_TOKEN || auth !== `Bearer ${env.SCRAPE_TOKEN}`)
+          return json({ error: 'unauthorized' }, 401);
+        const { path: blobPath, content_b64, content_type } = await request.json();
+        if (!blobPath || !content_b64 || content_b64.length > 20_000_000)
+          return json({ error: 'bad payload' }, 400);
+        await db.prepare('INSERT OR REPLACE INTO blobs (path, content_b64, content_type) VALUES (?, ?, ?)')
+          .bind(blobPath, content_b64, content_type || 'application/octet-stream').run();
+        return json({ ok: true, path: blobPath });
       }
 
       if (request.method === 'POST' && path === '/api/scrape') {

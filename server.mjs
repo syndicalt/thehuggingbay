@@ -5,6 +5,7 @@ import { dirname, join } from 'node:path';
 import {
   getDb, searchTorrents, getTorrent, randomTorrent, categoryCounts,
   fleetStats, insertTorrent, topUploaders, latestCatalog,
+  getTorrentFile, getBlob, putBlob,
   CATEGORIES, validateListing,
 } from './lib/db.mjs';
 import * as views from './lib/views.mjs';
@@ -52,6 +53,7 @@ function handleSubmit(form) {
     description: form.get('description') || null,
     files_json: form.get('files_json') || null,
     webseeds_json: form.get('webseeds_json') || null,
+    torrent_b64: form.get('torrent_b64') || null,
   };
   const err = validateListing(f);
   if (err) return { page: views.submitView('', esc(err)) };
@@ -107,9 +109,19 @@ const server = createServer(async (req, res) => {
         if (!CATEGORIES[cat]) return send(404, views.notFoundView('Unknown category.'));
         return send(200, views.browseCatView({ cat, rows: searchTorrents({ cats: [cat], sort: 'seeds', limit: 200 }) }));
       }
+      if (path.startsWith('/torrent/') && path.endsWith('.torrent')) {
+        const buf = getTorrentFile(path.slice(9, -8).toLowerCase());
+        if (!buf) return send(404, 'no .torrent file stored for this listing');
+        res.writeHead(200, { 'content-type': 'application/x-bittorrent', 'content-disposition': 'attachment' });
+        return res.end(buf);
+      }
       if (path.startsWith('/torrent/')) {
         const t = getTorrent(path.slice(9).toLowerCase());
         return t ? send(200, views.detailView(t)) : send(404, views.notFoundView('No such torrent. Lost at sea. 🌊'));
+      }
+      if (path.startsWith('/ws/_catalog/')) {
+        const blob = getBlob(path.slice('/ws/_catalog/'.length));
+        return blob ? send(200, blob.buf, blob.type) : send(404, 'not found');
       }
       if (path === '/submit') return send(200, views.submitView());
       if (path === '/fleet') {

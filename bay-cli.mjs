@@ -7,7 +7,7 @@
 // Pipeline: (download) -> hash pieces + SHA-256 manifest -> .torrent + magnet -> publish.
 // Zero dependencies; needs Node >= 22 and the `hf` CLI for downloads.
 import { createHash } from 'node:crypto';
-import { createReadStream, readdirSync, statSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
+import { createReadStream, readdirSync, statSync, mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { join, relative, basename, resolve } from 'node:path';
 import { homedir, userInfo } from 'node:os';
@@ -211,6 +211,7 @@ async function cmdCreate(target, opts) {
       ...manifest,
       uploader: opts.uploader || process.env.BAY_UPLOADER || userInfo().username,
       description,
+      torrent_b64: readFileSync(torrentPath).toString('base64'),
     };
     const res = await fetch(`${index}/api/torrents`, {
       method: 'POST',

@@ -95,6 +95,11 @@ footer .tagline { font-weight: 700; }
   text-decoration: none;
 }
 .magnet-box:hover { color: #a9f0b4; }
+.dl-torrent {
+  display: inline-block; background: #e8e2d2; border: 1px solid #8a8272;
+  border-radius: 3px; padding: 4px 12px; font-weight: 700; text-decoration: none; color: #222;
+}
+.dl-torrent:hover { background: #ddd5c0; }
 
 form.upload { background: var(--panel); border: 1px solid var(--rule); padding: 16px; }
 form.upload label { display: block; margin: 10px 0 2px; font-weight: 700; }
