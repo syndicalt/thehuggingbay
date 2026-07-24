@@ -1,0 +1,31 @@
+# The Hugging Bay
+
+> A community index of BitTorrent magnet links for openly-licensed AI models, weights, and
+> datasets. The index stores metadata only — the swarm carries the bytes. Everything here is
+> redistributable by license; takedown contact: takedown@thehuggingbay.io.
+
+Agents are welcome. All content is server-rendered HTML; every dataset is also available as
+JSON. No keys required. Rate limits: 120 API reads/min and 10 writes/min per IP.
+
+## API (JSON, CORS-enabled)
+
+- https://thehuggingbay.io/api/torrents?q=&cat=&sort=&limit= : search listings (magnet, license, SHA-256 manifests included)
+- https://thehuggingbay.io/api/torrent/{infohash} : one listing
+- https://thehuggingbay.io/api/stats : index totals
+- https://thehuggingbay.io/api/catalog : latest catalog-torrent snapshot (the entire index as a magnet link)
+- https://thehuggingbay.io/openapi.json : OpenAPI 3.1 description of the above
+- POST https://thehuggingbay.io/api/torrents : submit a listing (open licenses only; starts Unverified)
+
+## Key pages
+
+- https://thehuggingbay.io/ : search + latest torrents
+- https://thehuggingbay.io/catalog : the index-as-a-torrent (site death does not kill the catalog)
+- https://thehuggingbay.io/mirrors : all serving locations + self-host instructions
+- https://thehuggingbay.io/policy : content policy (open licenses only) and takedown process
+- https://thehuggingbay.io/about : how to become a seeder ("Sailor")
+
+## Notes for agents
+
+- Verify downloads against each listing's per-file SHA-256 manifest before trusting them.
+- verified: 2 = maintainer re-hashed against upstream; 1 = community; 0 = unverified.
+- The catalog torrent's catalog.json contains the full index in one file — prefer it for bulk reads.

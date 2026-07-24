@@ -1,0 +1,260 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "The Hugging Bay API",
+    "version": "0.2.0",
+    "description": "Index of BitTorrent magnets for openly-licensed AI artifacts. No auth for reads. Rate limits: 120 reads/min, 10 writes/min per IP.",
+    "contact": {
+      "email": "takedown@thehuggingbay.io"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://thehuggingbay.io"
+    }
+  ],
+  "paths": {
+    "/api/torrents": {
+      "get": {
+        "summary": "Search listings",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cat",
+            "in": "query",
+            "description": "repeatable: llm|emb|vis|aud|agt|data|app|meme",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "seeds",
+                "date",
+                "size",
+                "name"
+              ]
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "maximum": 500
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of torrent listings",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Torrent"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Submit a listing (open licenses only; starts Unverified)",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewTorrent"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Rejected (bad fields or non-open license)"
+          },
+          "429": {
+            "description": "Rate limited"
+          }
+        }
+      }
+    },
+    "/api/torrent/{infohash}": {
+      "get": {
+        "summary": "One listing",
+        "parameters": [
+          {
+            "name": "infohash",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{40}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Torrent listing"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/api/stats": {
+      "get": {
+        "summary": "Index totals",
+        "responses": {
+          "200": {
+            "description": "torrents, bytes, seeds, leechers"
+          }
+        }
+      }
+    },
+    "/api/catalog": {
+      "get": {
+        "summary": "Latest catalog-torrent snapshot (entire index as a magnet)",
+        "responses": {
+          "200": {
+            "description": "Torrent listing for the catalog"
+          },
+          "404": {
+            "description": "No catalog yet"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Torrent": {
+        "type": "object",
+        "properties": {
+          "infohash": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer"
+          },
+          "seeds": {
+            "type": "integer"
+          },
+          "leechers": {
+            "type": "integer"
+          },
+          "license": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "magnet": {
+            "type": "string"
+          },
+          "verified": {
+            "type": "integer",
+            "description": "0 unverified, 1 community, 2 captain"
+          },
+          "webseeds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "integer"
+                },
+                "sha256": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "NewTorrent": {
+        "type": "object",
+        "required": [
+          "name",
+          "infohash",
+          "category",
+          "size_bytes",
+          "license",
+          "uploader"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "infohash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "category": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer"
+          },
+          "license": {
+            "type": "string"
+          },
+          "uploader": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "webseeds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

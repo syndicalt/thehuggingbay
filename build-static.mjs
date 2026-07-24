@@ -108,6 +108,9 @@ async function main() {
   writeFileSync(join(OUT, 'api', 'torrents.json'), JSON.stringify(torrents, null, 2));
   const stats = await (await fetch(`${ORIGIN}/api/stats`)).json();
   writeFileSync(join(OUT, 'api', 'stats.json'), JSON.stringify(stats, null, 2));
+  for (const f of ['llms.txt', 'openapi.json']) {
+    writeFileSync(join(OUT, f), await (await fetch(`${ORIGIN}/${f}`)).text());
+  }
 
   const cats = ['llm', 'emb', 'vis', 'aud', 'agt', 'data', 'app', 'meme'];
   await save('/');

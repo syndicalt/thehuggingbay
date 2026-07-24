@@ -31,8 +31,10 @@
 </header>
 <div class="prose">
 <h2>API</h2>
-<p>Everything on the Bay is available as JSON. No keys, no rate limits (yet). Intended for the
-<code>bay-cli</code> torrent tool, seedbox automation, and mirrors.</p>
+<p>Everything on the Bay is available as JSON. No keys. Rate limits: 120 reads/min and
+10 writes/min per IP. Machine-readable spec at <a href="/thehuggingbay/openapi.json">/openapi.json</a>;
+agent orientation at <a href="/thehuggingbay/llms.txt">/llms.txt</a>. Intended for the
+<code>bay-cli</code> torrent tool, seedbox automation, mirrors, and agents.</p>
 <pre class="code">GET /api/torrents?q=llama&amp;cat=llm&amp;sort=seeds&amp;limit=50
 GET /api/torrent/&lt;infohash&gt;
 GET /api/stats

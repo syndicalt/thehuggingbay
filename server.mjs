@@ -9,6 +9,7 @@ import {
 } from './lib/db.mjs';
 import * as views from './lib/views.mjs';
 import { esc } from './lib/pages.mjs';
+import { llmsTxt, robotsTxt, sitemapXml, OPENAPI } from './lib/discovery.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 1337);
@@ -17,6 +18,17 @@ const BANNER = readFileSync(join(ROOT, 'public', 'banner.webp'));
 const CARD = readFileSync(join(ROOT, 'public', 'card.jpg'));
 
 getDb(); // open + seed on first run
+
+// Per-IP fixed-window rate limiting (in-memory; matches the Worker's limits).
+const buckets = new Map();
+function overLimit(ip, kind, limit) {
+  const now = Date.now();
+  const key = `${kind}:${ip}`;
+  let b = buckets.get(key);
+  if (!b || now > b.reset) { b = { count: 0, reset: now + 60_000 }; buckets.set(key, b); }
+  if (buckets.size > 50_000) for (const [k, v] of buckets) if (now > v.reset) buckets.delete(k);
+  return ++b.count > limit;
+}
 
 function lucky(url) {
   const q = url.searchParams.get('q') || '';
@@ -61,7 +73,17 @@ const server = createServer(async (req, res) => {
   const json = (status, obj) => send(status, JSON.stringify(obj, null, 2), 'application/json');
   const redirect = (loc) => { res.writeHead(302, { location: loc }); res.end(); };
 
+  const ip = req.socket.remoteAddress || 'unknown';
+
   try {
+    if (path.startsWith('/api/') && req.method === 'GET' && overLimit(ip, 'r', 120))
+      return json(429, { error: 'rate limited — 120 reads/min per IP. Ease off, sailor.' });
+    if (req.method === 'POST' && overLimit(ip, 'w', 10))
+      return json(429, { error: 'rate limited — 10 writes/min per IP. Ease off, sailor.' });
+    if (path === '/llms.txt') return send(200, llmsTxt(), 'text/plain; charset=utf-8');
+    if (path === '/robots.txt') return send(200, robotsTxt(), 'text/plain; charset=utf-8');
+    if (path === '/openapi.json') return send(200, JSON.stringify(OPENAPI, null, 2), 'application/json');
+    if (path === '/sitemap.xml') return send(200, sitemapXml(searchTorrents({ limit: 500 }).map((t) => t.infohash)), 'application/xml');
     if (path === '/style.css') return send(200, CSS, 'text/css');
     if (path === '/banner.webp') return send(200, BANNER, 'image/webp');
     if (path === '/card.jpg') return send(200, CARD, 'image/jpeg');

@@ -4,6 +4,7 @@ import CSS from '../../public/style.css';
 import BANNER from '../../public/banner.webp';
 import CARD from '../../public/card.jpg';
 import { CATEGORIES, validateListing } from '../../lib/shared.mjs';
+import { llmsTxt, robotsTxt, sitemapXml, OPENAPI } from '../../lib/discovery.mjs';
 import { esc } from '../../lib/pages.mjs';
 import * as views from '../../lib/views.mjs';
 
@@ -112,13 +113,24 @@ const json = (obj, status = 200) =>
     headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' },
   });
 
+// Fail-open rate limit check: a limiter outage should not take the API down.
+async function overLimit(limiter, key) {
+  if (!limiter) return false;
+  try { return !(await limiter.limit({ key })).success; } catch { return false; }
+}
+
 export default {
   async fetch(request, env) {
     const db = env.DB;
     const url = new URL(request.url);
     const path = url.pathname;
+    const ip = request.headers.get('cf-connecting-ip') || 'unknown';
 
     try {
+      if (path.startsWith('/api/') && request.method === 'GET' && await overLimit(env.READ_LIMIT, ip))
+        return json({ error: 'rate limited — 120 reads/min per IP. Ease off, sailor.' }, 429);
+      if (request.method === 'POST' && await overLimit(env.WRITE_LIMIT, ip))
+        return json({ error: 'rate limited — 10 writes/min per IP. Ease off, sailor.' }, 429);
       // Webseed shim (BEP-19): clients append "<torrent-name>/<file path>" to a base URL
       // ending in "/". HF resolve URLs need "/resolve/main/" between repo and file, so
       // torrents carry ws=https://thehuggingbay.io/ws/<org>/ and we redirect:
@@ -131,6 +143,14 @@ export default {
         );
       }
 
+      const text = (body, type) => new Response(body, { headers: { 'content-type': type, 'cache-control': 'public, max-age=3600' } });
+      if (path === '/llms.txt') return text(llmsTxt(), 'text/plain; charset=utf-8');
+      if (path === '/robots.txt') return text(robotsTxt(), 'text/plain; charset=utf-8');
+      if (path === '/openapi.json') return text(JSON.stringify(OPENAPI, null, 2), 'application/json');
+      if (path === '/sitemap.xml') {
+        const rows = (await db.prepare('SELECT infohash FROM torrents ORDER BY seeds DESC LIMIT 500').all()).results;
+        return text(sitemapXml(rows.map((r) => r.infohash)), 'application/xml');
+      }
       if (path === '/style.css')
         return new Response(CSS, { headers: { 'content-type': 'text/css', 'cache-control': 'public, max-age=3600' } });
       if (path === '/banner.webp')
