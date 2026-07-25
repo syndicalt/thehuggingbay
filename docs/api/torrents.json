@@ -1,123 +1,5 @@
 [
   {
-    "infohash": "4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b",
-    "name": "nomic-embed-text-v1.5",
-    "category": "emb",
-    "size_bytes": 2215241835,
-    "size": "2.1 GB",
-    "seeds": 2,
-    "leechers": 0,
-    "uploader": "syndicalt",
-    "uploader_rank": "Captain",
-    "uploaded_at": "2026-07-23 18:56:22",
-    "license": "Apache-2.0",
-    "source_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
-    "description": "Long-context text embeddings with Matryoshka dims. Full mirror of nomic-ai/nomic-embed-text-v1.5.",
-    "verified": 2,
-    "webseeds": [
-      "https://thehuggingbay.io/ws/nomic-ai/"
-    ],
-    "files": [
-      {
-        "path": "1_Pooling/config.json",
-        "size": 286,
-        "sha256": "3d6180f7233df2f529d65ea60c8db4af614fb78cbe99fd81103dcfeb9f8166a5"
-      },
-      {
-        "path": "config_sentence_transformers.json",
-        "size": 140,
-        "sha256": "482f42ca954f5a8d55bccbb437b8d6eb721ce19059c78330c815045ddd1a87eb"
-      },
-      {
-        "path": "config.json",
-        "size": 2538,
-        "sha256": "9ab00bd92cee80a569f708140b7b6c1661a65891ff3765b1519e181ba2f2c92b"
-      },
-      {
-        "path": "model.safetensors",
-        "size": 546938168,
-        "sha256": "9e7d262b1fe5ea350782829496efa831901b77486bbde1cea54a4c822d010d5c"
-      },
-      {
-        "path": "modules.json",
-        "size": 255,
-        "sha256": "f93c503b32fa7bc2e186843f0add961caa14eb68f7be516e327df3cadbcd541a"
-      },
-      {
-        "path": "onnx/model_bnb4.onnx",
-        "size": 158035801,
-        "sha256": "eb81cef4642ae7a81cd135c08d9622d85cff3fa25d5adabb3561fba908a48b75"
-      },
-      {
-        "path": "onnx/model_fp16.onnx",
-        "size": 273859028,
-        "sha256": "cf5b5a86edb00f895561803cfc04729090a958340b8ca2ad76c143f565f6bb04"
-      },
-      {
-        "path": "onnx/model_int8.onnx",
-        "size": 137296292,
-        "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27"
-      },
-      {
-        "path": "onnx/model_q4.onnx",
-        "size": 165113221,
-        "sha256": "314976b7b9fba83283f9c8a29ee680a159fa485f52104e3fa39d3d5858337003"
-      },
-      {
-        "path": "onnx/model_q4f16.onnx",
-        "size": 111076526,
-        "sha256": "3dbab6709d866709a8f9df237fe9a008bd9ccfc30e32e4b8f7f5e085cdb68bf1"
-      },
-      {
-        "path": "onnx/model_quantized.onnx",
-        "size": 137296292,
-        "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27"
-      },
-      {
-        "path": "onnx/model_uint8.onnx",
-        "size": 137296322,
-        "sha256": "f7ee635388c995ea16eeeb50bc82269533b740be291ab13dc86df8977b5c31df"
-      },
-      {
-        "path": "onnx/model.onnx",
-        "size": 547310275,
-        "sha256": "147d5aa88c2101237358e17796cf3a227cead1ec304ec34b465bb08e9d952965"
-      },
-      {
-        "path": "README.md",
-        "size": 71843,
-        "sha256": "4430178908fbd574fdb6457e302d23e643d733ed036b5777180b0806946767b2"
-      },
-      {
-        "path": "sentence_bert_config.json",
-        "size": 58,
-        "sha256": "9ee3935137f87c9ce6662ae17fe7afb7c9c64744a41247359fd228dc37e627b3"
-      },
-      {
-        "path": "special_tokens_map.json",
-        "size": 695,
-        "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
-      },
-      {
-        "path": "tokenizer_config.json",
-        "size": 1191,
-        "sha256": "d7e0000bcc80134debd2222220427e6bf5fa20a669f40a0d0d1409cc18e0a9bc"
-      },
-      {
-        "path": "tokenizer.json",
-        "size": 711396,
-        "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
-      },
-      {
-        "path": "vocab.txt",
-        "size": 231508,
-        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
-      }
-    ],
-    "magnet": "magnet:?xt=urn:btih:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b&dn=nomic-embed-text-v1.5&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fnomic-ai%2F",
-    "torrent_url": "https://thehuggingbay.io/torrent/4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b.torrent"
-  },
-  {
     "infohash": "ac53b114e6e64f2f868483d9bda275e9907142ff",
     "name": "hugging-bay-catalog-2026-07-24",
     "category": "data",
@@ -272,6 +154,124 @@
     ],
     "magnet": "magnet:?xt=urn:btih:ea150528ee00b941ac25cf6c48898ff36e266695&dn=whisper-large-v3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fopenai%2F",
     "torrent_url": "https://thehuggingbay.io/torrent/ea150528ee00b941ac25cf6c48898ff36e266695.torrent"
+  },
+  {
+    "infohash": "4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b",
+    "name": "nomic-embed-text-v1.5",
+    "category": "emb",
+    "size_bytes": 2215241835,
+    "size": "2.1 GB",
+    "seeds": 1,
+    "leechers": 0,
+    "uploader": "syndicalt",
+    "uploader_rank": "Captain",
+    "uploaded_at": "2026-07-23 18:56:22",
+    "license": "Apache-2.0",
+    "source_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+    "description": "Long-context text embeddings with Matryoshka dims. Full mirror of nomic-ai/nomic-embed-text-v1.5.",
+    "verified": 2,
+    "webseeds": [
+      "https://thehuggingbay.io/ws/nomic-ai/"
+    ],
+    "files": [
+      {
+        "path": "1_Pooling/config.json",
+        "size": 286,
+        "sha256": "3d6180f7233df2f529d65ea60c8db4af614fb78cbe99fd81103dcfeb9f8166a5"
+      },
+      {
+        "path": "config_sentence_transformers.json",
+        "size": 140,
+        "sha256": "482f42ca954f5a8d55bccbb437b8d6eb721ce19059c78330c815045ddd1a87eb"
+      },
+      {
+        "path": "config.json",
+        "size": 2538,
+        "sha256": "9ab00bd92cee80a569f708140b7b6c1661a65891ff3765b1519e181ba2f2c92b"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 546938168,
+        "sha256": "9e7d262b1fe5ea350782829496efa831901b77486bbde1cea54a4c822d010d5c"
+      },
+      {
+        "path": "modules.json",
+        "size": 255,
+        "sha256": "f93c503b32fa7bc2e186843f0add961caa14eb68f7be516e327df3cadbcd541a"
+      },
+      {
+        "path": "onnx/model_bnb4.onnx",
+        "size": 158035801,
+        "sha256": "eb81cef4642ae7a81cd135c08d9622d85cff3fa25d5adabb3561fba908a48b75"
+      },
+      {
+        "path": "onnx/model_fp16.onnx",
+        "size": 273859028,
+        "sha256": "cf5b5a86edb00f895561803cfc04729090a958340b8ca2ad76c143f565f6bb04"
+      },
+      {
+        "path": "onnx/model_int8.onnx",
+        "size": 137296292,
+        "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27"
+      },
+      {
+        "path": "onnx/model_q4.onnx",
+        "size": 165113221,
+        "sha256": "314976b7b9fba83283f9c8a29ee680a159fa485f52104e3fa39d3d5858337003"
+      },
+      {
+        "path": "onnx/model_q4f16.onnx",
+        "size": 111076526,
+        "sha256": "3dbab6709d866709a8f9df237fe9a008bd9ccfc30e32e4b8f7f5e085cdb68bf1"
+      },
+      {
+        "path": "onnx/model_quantized.onnx",
+        "size": 137296292,
+        "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27"
+      },
+      {
+        "path": "onnx/model_uint8.onnx",
+        "size": 137296322,
+        "sha256": "f7ee635388c995ea16eeeb50bc82269533b740be291ab13dc86df8977b5c31df"
+      },
+      {
+        "path": "onnx/model.onnx",
+        "size": 547310275,
+        "sha256": "147d5aa88c2101237358e17796cf3a227cead1ec304ec34b465bb08e9d952965"
+      },
+      {
+        "path": "README.md",
+        "size": 71843,
+        "sha256": "4430178908fbd574fdb6457e302d23e643d733ed036b5777180b0806946767b2"
+      },
+      {
+        "path": "sentence_bert_config.json",
+        "size": 58,
+        "sha256": "9ee3935137f87c9ce6662ae17fe7afb7c9c64744a41247359fd228dc37e627b3"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 695,
+        "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 1191,
+        "sha256": "d7e0000bcc80134debd2222220427e6bf5fa20a669f40a0d0d1409cc18e0a9bc"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 711396,
+        "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+      },
+      {
+        "path": "vocab.txt",
+        "size": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    ],
+    "magnet": "magnet:?xt=urn:btih:4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b&dn=nomic-embed-text-v1.5&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fthehuggingbay.io%2Fws%2Fnomic-ai%2F",
+    "torrent_url": "https://thehuggingbay.io/torrent/4d3af52c6c66ef04a4fb1d064425d4b7f12ce16b.torrent"
   },
   {
     "infohash": "de23e74caeb06e4c85801ec4933770e296479575",
